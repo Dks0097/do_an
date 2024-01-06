@@ -55,15 +55,15 @@
           <!-- {{-- <img src="" alt="" width="150"/> --}} -->
           <h2 style="color: rgb(0, 106, 255); 
                     font-size: 26px;">
-                    <strong>House of Koye</strong>
+                    <strong>House of Duong</strong>
           </h2>
         </td>
         <td align="right">
             <pre class="font" >
-               House of Koye Head Office
-               Email:support@houseofkoye.co.uk <br>
-               Mob: 07925 069113 <br>
-               Birmingham, England <br>
+               Đề tài khách sạn
+               Email:duongnguyen3412@gmail.com <br>
+               SDT: 0865 710 154 <br>
+               99 Tô Hiến Thành, Đà Nẵng <br>
 
             </pre>
         </td>

@@ -64,7 +64,7 @@
                                 @foreach($room as $item)
                              
                                 <li class="nav-item">
-                                    <a href="room.html" class="nav-link">
+                                    <a href="{{url('/rooms/details/'.$item->id)}}" class="nav-link">
                                         {{$item['type']['name']}} 
                                     </a>
                                 </li>
@@ -79,12 +79,12 @@
                         </li>
 
                         <li class="nav-item-btn">
-                            <a href="#" class="default-btn btn-bg-one border-radius-5">Book Now</a>
+                            <a href="{{route('froom.all')}}" class="default-btn btn-bg-one border-radius-5">Book Now</a>
                         </li>
                     </ul>
 
                     <div class="nav-btn">
-                        <a href="#" class="default-btn btn-bg-one border-radius-5">Book Now</a>
+                        <a href="{{route('froom.all')}}" class="default-btn btn-bg-one border-radius-5">Book Now</a>
                     </div>
                 </div>
             </nav>
