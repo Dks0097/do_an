@@ -65,7 +65,7 @@
             <div class="form-group">
                 <label>Numbers of Persons</label>
                 <select class="form-control" name="persion" id="nmbr_person">
-                @for ($i = 1; $i <= 4; $i++) 
+                @for ($i = 1; $i <= 5; $i++) 
       <option {{ old('persion') == $i ? 'selected' : '' }} value="0{{ $i }}" >0{{ $i }} </option>
               @endfor
                 </select>	
@@ -78,11 +78,12 @@
 
         <div class="col-lg-12">
             <div class="form-group">
-                <label>Numbers of Rooms</label>
+                <label>Numbers of Rooms </label>
                 <select class="form-control number_of_rooms" name="number_of_rooms" id="select_room">
-                    @for ($i = 1; $i <= 5; $i++)  
-                    <option value="0{{ $i }}">0{{ $i }}</option>
+                    @for ($i = 1; $i <= $roomnumber->room_no ; $i++)
+                        <option value="{{ sprintf('%02d', $i) }}">{{ sprintf('%02d', $i) }}</option>
                     @endfor
+
                     
                 </select>	
             </div>
@@ -315,7 +316,7 @@
                                 </ul>
                                 
                                 <a href="room-details.html" class="book-more-btn">
-                                    Book Now
+                                    Book Now {{$status}}
                                 </a>
                             </div>
                         </div>
@@ -337,6 +338,7 @@
        var check_in = "{{ old('check_in') }}";
        var check_out = "{{ old('check_out') }}";
        var room_id = "{{ $room_id }}";
+       var status = "{{ $status }}";
        if (check_in != '' && check_out != ''){
           getAvaility(check_in, check_out, room_id);
        }
@@ -365,17 +367,39 @@
 
 
 
+    // function getAvaility(check_in, check_out, room_id,status) {
+    // $.ajax({
+    //     url: "{{ route('check_room_availability') }}",
+    //     data: {room_id:room_id, check_in:check_in, check_out:check_out,status:status},
+    //     success: function(data){
+    //         console.log(data['room_id']);
+    //         // var roomAvailability;
+    //         // if (data['status'] == 'active') {
+    //         //     roomAvailability = data['room_no'];
+    //         // } else {
+    //         //     roomAvailability = 0;
+    //         // }
+    //         // $(".available_room").html('Availability : <span class="text-success">'+roomAvailability+' Rooms</span>');
+    //         // $("#available_room").val(roomAvailability);
+    //         // price_calculate(data['total_nights']);
+    //     }
+    // });
     function getAvaility(check_in, check_out, room_id) {
        $.ajax({
           url: "{{ route('check_room_availability') }}",
-          data: {room_id:room_id, check_in:check_in, check_out:check_out},
+          data: {room_id:room_id, check_in:check_in, check_out:check_out, status:status},
           success: function(data){
+          
+            
              $(".available_room").html('Availability : <span class="text-success">'+data['available_room']+' Rooms</span>');
              $("#available_room").val(data['available_room']);
              price_calculate(data['total_nights']);
           }
+        
        });
-    }
+    
+}
+
 
     function price_calculate(total_nights){
        var room_price = $("#room_price").val();

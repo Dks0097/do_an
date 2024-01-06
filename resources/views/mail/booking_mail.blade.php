@@ -301,7 +301,7 @@
 <h1 style="color:#ffff;direction:ltr;font-family:'Roboto Slab', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:74px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">House of Koye<br/> </h1>
 </div>
 <div class="bee-block bee-block-3 bee-paragraph">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>Enim nisl, eget dictum consectetur integer lectus.</p>
+	<h4>Kính gửi Quý khách hàng,</h4>
 </div>
 <div class="bee-block bee-block-4 bee-button"><a class="bee-button-content" href="{{url('/')}}" style="font-size: 14px; background-color: #3c3c3c; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 20px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 400; letter-spacing: 1px; max-width: 100%; padding-bottom: 5px; padding-left: 40px; padding-right: 40px; padding-top: 5px; width: auto; display: inline-block;" target="_self"><span dir="ltr" style="word-break: break-word; font-size: 14px; line-height: 200%; letter-spacing: 1px;">DISCOVER</span></a></div>
 </div>
@@ -326,7 +326,7 @@
 </div>
 <div class="bee-col bee-col-2 bee-col-w8">
 <div class="bee-block bee-block-1 bee-paragraph">
-<p><strong>Hell Sir </strong><br/><strong>Your Booking Request has been confirmed by the management.</strong></p>
+<p><strong>Thưa ngài </strong><br/><strong>Yêu cầu đặt phòng của bạn đã được ban quản lý xác nhận..</strong></p>
 
  <h4> check in : {{ $booking['check_in'] }}</h4>
  <h4> check Out : {{ $booking['check_out'] }}</h4>
@@ -337,7 +337,12 @@
 
 
 
-<p>Aliquam purus commodo magnis ipsum dolor sit amet, consectetur adipiscing elit habitasse est in rhoncus libero ut. Aenean viverra fermentum, volutpat, neque amet, justo.<br/>Socis natoqu eagnis dist mte dulmuese feugiata lecen erment.</p>
+<p>Chúng tôi xin chân thành cảm ơn Quý khách đã lựa chọn và tin tưởng dịch vụ đặt phòng của chúng tôi. Sự hài lòng và thoải mái của Quý khách trong suốt thời gian lưu trú là mục tiêu hàng đầu của chúng tôi.
+	<br/>Chúng tôi rất vui mừng và biết ơn vì đã có cơ hội phục vụ Quý khách. Hy vọng rằng chúng tôi đã mang đến cho Quý khách những trải nghiệm tốt nhất. 
+	<br/>Chúng tôi rất mong được tiếp tục phục vụ Quý khách trong tương lai gần. Nếu Quý khách có bất kỳ yêu cầu hoặc phản hồi nào, xin đừng ngần ngại liên hệ với chúng tôi.
+	<br/>Trân trọng
+
+</p>
 </div>
 <div class="bee-block bee-block-2 bee-button"><a class="bee-button-content" href="{{url('/')}}" style="font-size: 14px; background-color: #3c3c3c; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 20px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; font-weight: 400; letter-spacing: 1px; max-width: 100%; padding-bottom: 5px; padding-left: 40px; padding-right: 40px; padding-top: 5px; width: auto; display: inline-block;" target="_self"><span dir="ltr" style="word-break: break-word; font-size: 14px; line-height: 200%; letter-spacing: 1px;">Explore</span></a></div>
 </div>
