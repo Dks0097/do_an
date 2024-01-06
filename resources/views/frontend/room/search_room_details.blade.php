@@ -392,13 +392,13 @@
        var av_room = $("#available_room").val();
        var select_room = $("#select_room").val();
        if (parseInt(select_room) >  av_room){
-          alert('Sorry, you select maximum number of room');
+          alert('Xin lỗi, bạn chọn số lượng phòng tối đa');
           return false;
        }
        var nmbr_person = $("#nmbr_person").val();
        var total_adult = $("#total_adult").val();
        if(parseInt(nmbr_person) > parseInt(total_adult)){
-          alert('Sorry, you select maximum number of person');
+          alert('Xin lỗi, bạn chọn số lượng người tối đa');
           return false;
        }
 
