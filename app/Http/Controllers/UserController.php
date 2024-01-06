@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Booking;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
+
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -14,7 +16,16 @@ class UserController extends Controller
    {
       return view('frontend.index');
    } //end method
+   public function Dashboard()
+   {
+      $user_id = Auth::user()->id;
+      $booking = Booking::where('user_id', $user_id)->get('status');
+      $pending = Booking::where('user_id', $user_id)->where('status', 0)->get();
 
+      $Complete =  Booking::where('user_id', $user_id)->where('status', 1)->get();
+      // dd($booking);
+      return view('frontend.dashboard.user_dashboard', compact('booking','Complete','pending'));
+   }
    public function UserProfile()
    {
 

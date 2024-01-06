@@ -48,7 +48,7 @@ class BookingComplete extends Notification
     public function toArray(object $notifiable): array
     {
         return [
-            'message' => 'New Booking Added in Hotel'
+            'message' => 'Đặt phòng mới được thêm vào khách sạn'
         ];
     }
 }
