@@ -34,5 +34,20 @@ class UsersTableSeeder extends Seeder
               
             ],
         ]);
+        DB::table('site_settings')->insert([
+            //Admin
+            [
+                'logo' => 'upload/site/1787348998879090.png',
+                'phone' => '0865710154',
+                'address' => '99 tô hiến thành',
+                'email' => 'support@gmail.com',
+                'facebook' => 'fb/dddd.nnnnnn',
+                'twitter' => 'tw/dddd.nnnnnn',
+                'copyright' => '2024',
+                
+            ],
+            //Users
+          
+        ]);
     }
 }
