@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('group_name'); // For MySQL 8.0 use string('guard_name', 125);
             $table->timestamps();
 
-            $table->unique(['name', 'group_name']);
+            $table->unique(['name', 'guard_name']);
         });
 
         Schema::create($tableNames['roles'], function (Blueprint $table) use ($teams, $columnNames) {
