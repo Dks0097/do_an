@@ -15,9 +15,9 @@ class BookAreaSeeder extends Seeder
     {
         BookArea::create(
             [
-                'short_title'   => "MAKE A QUICK BOOKING",
-                'main_title'    => "We Are the Best in All-time & So Please Get a Quick Booking",
-                'short_desc'    => "Atoli is one of the best resorts in the global market and that's why you will get a luxury life period on the global market. We always provide you a special support for all of our guests and that's will be the main reason to be the most popular.",
+                'short_title'   => "Đặt Phòng Nhanh",
+                'main_title'    => "Chúng tôi là người giỏi nhất mọi thời đại và vì vậy hãy đặt chỗ nhanh",
+                'short_desc'    => "Atoli là một trong những khu nghỉ dưỡng tốt nhất trên thị trường toàn cầu và đó là lý do tại sao bạn sẽ có được một cuộc sống xa hoa trên thị trường toàn cầu. Chúng tôi luôn cung cấp cho bạn sự hỗ trợ đặc biệt dành cho tất cả khách hàng của chúng tôi và đó sẽ là lý do chính khiến bạn được yêu thích nhất.",
                 'image'    => "upload/bookarea/1787589257875300.png",
 
                 'created_at'    => date('Y-m-d H:i:s', time()),
