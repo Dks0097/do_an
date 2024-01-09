@@ -27,25 +27,25 @@
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
                             <a href="{{url('/')}}" class="nav-link active">
-                                Home 
+                                Trang Chủ
                                
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="about.html" class="nav-link">
-                                About
+                                Về Chúng tôi
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                Restaurant 
+                                Nhà Hàng
                             </a>
                           
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('show.gallery') }}" class="nav-link">
-                                Gallery
+                                Phòng Trưng Bày
                               </a>
                          
                         </li>
@@ -62,7 +62,7 @@
 @endphp
                         <li class="nav-item">
                             <a href="{{route('froom.all')}}" class="nav-link">
-                                All Rooms
+                                Các Loại Phòng
                                 <i class='bx bx-chevron-down'></i>
                             </a>
                             <ul class="dropdown-menu">
@@ -79,7 +79,7 @@
 
                         <li class="nav-item">
                             <a href="{{ route('contact.us') }}" class="nav-link">
-                                Contact
+                                Liên Hệ
                             </a>
                         </li>
 
@@ -89,7 +89,7 @@
                     </ul>
 
                     <div class="nav-btn">
-                        <a href="{{route('froom.all')}}" class="default-btn btn-bg-one border-radius-5">Book Now</a>
+                        <a href="{{route('froom.all')}}" class="default-btn btn-bg-one border-radius-5">Đặt Phòng Ngay</a>
                     </div>
                 </div>
             </nav>

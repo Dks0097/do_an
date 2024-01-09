@@ -7,7 +7,7 @@
             <div class="inner-title">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">Trang Chủ</a>
                     </li>
                     <li><i class='bx bx-chevron-right'></i></li>
                     <li>Blog</li>
@@ -73,7 +73,7 @@
                             </form>
                         </div>
                         <div class="services-bar-widget">
-                            <h3 class="title">Blog Category</h3>
+                            <h3 class="title">Chuyên mục Blog</h3>
                             <div class="side-bar-categories">
                                 @foreach ($bcategory as $cat) 
                                 <ul>
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                         <div class="side-bar-widget">
-                            <h3 class="title">Recent Posts</h3>
+                            <h3 class="title">Bài viết gần đây</h3>
                             <div class="widget-popular-post">
                                 @foreach ($lpost as $post)   
                             <article class="item">

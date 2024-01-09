@@ -14,7 +14,7 @@
                             </a>
                         </div>
                         <p>
-                            Aenean finibus convallis nisl sit amet hendrerit. Etiam blandit velit non lorem mattis, non ultrices eros bibendum .
+                            Chứng tôi cam kết sẽ cung cấp dịch vụ nghĩ dưỡng tuyệt vời nhất mà bạn có thể trãi nghiệm ở chúng tôi mà không phải bất cứ đâu, Còn chần chờ gì nữa mà không nhấn ngay vào nuốt ĐẶT PHÒNG NGAY.
                         </p>
                         <ul class="footer-list-contact">
                             <li>
@@ -35,42 +35,42 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget pl-5">
-                        <h3>Links</h3>
+                        <h3>Liên Kết</h3>
                         <ul class="footer-list">
                             <li>
                                 <a href="about.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    About Us
+                                    Về chúng tôi
                                 </a>
                             </li> 
                             <li>
                                 <a href="services-1.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Services
+                                    Dịch vụ
                                 </a>
                             </li> 
                             <li>
                                 <a href="team.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Team
+                                    Thành viên
                                 </a>
                             </li> 
                             <li>
                                 <a href="gallery.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Gallery
+                                    Phòng chưng bày 
                                 </a>
                             </li> 
                             <li>
                                 <a href="terms-condition.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Terms 
+                                    Điều kiện
                                 </a>
                             </li> 
                             <li>
                                 <a href="privacy-policy.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Privacy Policy
+                                    Chính sách bảo mật
                                 </a>
                             </li> 
                         </ul>
@@ -79,12 +79,12 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
-                        <h3>Useful Links</h3>
+                        <h3>Liên kết Hữu Ích</h3>
                         <ul class="footer-list">
                             <li>
                                 <a href="index.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Home
+                                    Trang Chủ
                                 </a>
                             </li> 
                             <li>
@@ -96,25 +96,25 @@
                             <li>
                                 <a href="faq.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    FAQ
+                                    Câu hỏi thường gặp
                                 </a>
                             </li> 
                             <li>
                                 <a href="testimonials.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Testimonials
+                                    Đánh Giá
                                 </a>
                             </li> 
                             <li>
                                 <a href="gallery.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Gallery
+                                    Phòng chưng bày
                                 </a>
                             </li> 
                             <li>
                                 <a href="contact.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Contact Us
+                                    Liên hệ chúng tôi
                                 </a>
                             </li> 
                         </ul>
@@ -123,10 +123,9 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
-                        <h3>Newsletter</h3>
+                        <h3>Bản Tin</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Nullam tempor eget ante fringilla rutrum aenean sed venenatis .
+                            Khách hàng là thượng đế mà chúng tôi muốn được chăm sóc và hỗ trợ nhiệt tình 
                         </p>
                         <div class="footer-form">
                             <form class="newsletter-form" data-toggle="validator" method="POST">
@@ -139,7 +138,7 @@
 
                                     <div class="col-lg-12 col-md-12">
                                         <button type="submit" class="default-btn btn-bg-one">
-                                            Subscribe Now
+                                            Đăng kí ngay bây giờ 
                                         </button>
                                         <div id="validator-newsletter" class="form-result"></div>
                                     </div>

@@ -1,8 +1,8 @@
 <div class="services-area-three pt-100 pb-70 section-bg">
     <div class="container">
         <div class="section-title text-center">
-            <span class="sp-color">Our Services</span>
-            <h2>Our Services on the Global Market for Our Client's Reservation</h2>
+            <span class="sp-color">Dịch vụ của chúng tôi</span>
+            <h2>Dịch vụ của chúng tôi trên thị trường toàn cầu dành cho việc đặt chỗ của khách hàng</h2>
         </div>
 
         <div class="row pt-45">
@@ -10,12 +10,12 @@
                 <div class="service-item-two">
                     <i class="flaticon-hotel"></i>
                     <div class="content">
-                        <h3><a href="service-details.html">Hotel Room Reservation into the Desire Places</a></h3>
+                        <h3><a href="service-details.html">Đặt phòng khách sạn tại những địa điểm mong muốn</a></h3>
                         <p>
-                            You can easily reserve a hotel room in a good place as you want. This will be able to make good feelings. 
-                            This will be really effective for us and all & all of the customers & clients.
+                            Bạn có thể dễ dàng đặt phòng khách sạn ở vị trí tốt như ý muốn. Điều này sẽ có thể tạo ra cảm giác tốt. 
+                            Điều này sẽ thực sự hiệu quả đối với chúng tôi và tất cả & tất cả khách hàng.
                         </p>
-                        <a href="service-details.html" class="read-btn">Read More</a>
+                        <a href="service-details.html" class="read-btn">Tìm Hiểu Thêm</a>
                     </div>
                 </div>
             </div>
@@ -24,12 +24,12 @@
                 <div class="service-item-two">
                     <i class="flaticon-resort"></i>
                     <div class="content">
-                        <h3><a href="service-details.html">Resort Reservation Into the Good and Suitable Place</a></h3>
+                        <h3><a href="service-details.html">Đặt phòng nghỉ dưỡng ở nơi tốt và phù hợp</a></h3>
                         <p>
-                            You can easily reserve a hotel room in a good place as you want. This will be able to make good feelings. 
-                            This will be really effective for us and all & all of the customers & clients.
+                         Bạn có thể dễ dàng đặt phòng khách sạn ở vị trí tốt như ý muốn. Điều này sẽ có thể tạo ra cảm giác tốt. 
+                            Điều này sẽ thực sự hiệu quả đối với chúng tôi và tất cả & tất cả khách hàng.
                         </p>
-                        <a href="service-details.html" class="read-btn">Read More</a>
+                        <a href="service-details.html" class="read-btn">Tìm Hiểu Thêm</a>
                     </div>
                 </div>
             </div>
@@ -38,12 +38,12 @@
                 <div class="service-item-two">
                     <i class="flaticon-buildings"></i>
                     <div class="content">
-                        <h3><a href="service-details.html">Weeding Hall Reservation in the Suitable and Good Place</a></h3>
+                        <h3><a href="service-details.html">Đặt phòng tiệc cưới ở địa điểm phù hợp và tốt</a></h3>
                         <p>
-                            You can easily reserve a hotel room in a good place as you want. This will be able to make good feelings. 
-                            This will be really effective for us and all & all of the customers & clients.
+                         Bạn có thể dễ dàng đặt phòng khách sạn ở vị trí tốt như ý muốn. Điều này sẽ có thể tạo ra cảm giác tốt. 
+                            Điều này sẽ thực sự hiệu quả đối với chúng tôi và tất cả & tất cả khách hàng.
                         </p>
-                        <a href="service-details.html" class="read-btn">Read More</a>
+                        <a href="service-details.html" class="read-btn">Tìm Hiểu Thêm</a>
                     </div>
                 </div>
             </div>
@@ -52,12 +52,12 @@
                 <div class="service-item-two">
                     <i class="flaticon-businessmen"></i>
                     <div class="content">
-                        <h3><a href="service-details.html">Conference Room Reservation in the Suitable and Good Place</a></h3>
+                        <h3><a href="service-details.html">Đặt Phòng Hội Nghị Ở Địa Điểm Thích Hợp Và Tốt</a></h3>
                         <p>
-                            You can easily reserve a hotel room in a good place as you want. This will be able to make good feelings. 
-                            This will be really effective for us and all & all of the customers & clients.
+                         Bạn có thể dễ dàng đặt phòng khách sạn ở vị trí tốt như ý muốn. Điều này sẽ có thể tạo ra cảm giác tốt. 
+                            Điều này sẽ thực sự hiệu quả đối với chúng tôi và tất cả & tất cả khách hàng.
                         </p>
-                        <a href="service-details.html" class="read-btn">Read More</a>
+                        <a href="service-details.html" class="read-btn">Tìm Hiểu Thêm</a>
                     </div>
                 </div>
             </div>

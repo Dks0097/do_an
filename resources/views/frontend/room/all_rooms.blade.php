@@ -22,8 +22,8 @@
 <div class="room-area pt-100 pb-70">
     <div class="container">
         <div class="section-title text-center">
-            <span class="sp-color">ROOMS</span>
-            <h2>Our Rooms & Rates</h2>
+            <span class="sp-color">PHÒNG</span>
+            <h2>Phòng & Giá của chúng tôi</h2>
         </div>
 
         <div class="row pt-45">

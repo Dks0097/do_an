@@ -46,19 +46,19 @@
 
                         <li>
                             <i class='bx bxs-user-rectangle'></i>
-                            <a href="{{route('user.logout')}}">Logout</a>
+                            <a href="{{route('user.logout')}}">Đăng Xuất</a>
                         </li>
 
                         @else
 
                         <li>
                             <i class='bx bxs-user-pin'></i>
-                            <a href="{{route('login')}}">login</a>
+                            <a href="{{route('login')}}">Đăng Nhập</a>
                         </li>
 
                         <li>
                             <i class='bx bxs-user-rectangle'></i>
-                            <a href="{{route('register')}}">register</a>
+                            <a href="{{route('register')}}">Đăng Kí </a>
                         </li>
 
 

@@ -6,12 +6,12 @@
         <div class="inner-title">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Trang Chủ</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
-                <li>Contact</li>
+                <li>Liên Hệ</li>
             </ul>
-            <h3>Contact</h3>
+            <h3>Liên Hệ</h3>
         </div>
     </div>
 </div>
@@ -24,7 +24,7 @@
             <div class="col-lg-6">
                 <div class="contact-content">
                     <div class="section-title">
-                        <h2>Let's Start to Give Us a Message and Contact With Us</h2>
+                        <h2>Hãy bắt đầu gửi tin nhắn và liên hệ với chúng tôi</h2>
                     </div>
                     <div class="contact-img">
                         <img src="{{ asset('frontend/assets/img/contact/contact-img1.jpg') }}" alt="Images">
@@ -75,7 +75,7 @@
                 
                             <div class="col-lg-12 col-md-12">
                                 <button type="submit" class="default-btn btn-bg-three">
-                                    Send Message
+                                    Gửi Tin Nhắn
                                 </button>
                 
                                 <div class="clearfix"></div>
@@ -100,10 +100,10 @@
             <div class="col-lg-6">
                 <div class="contact-another-content">
                     <div class="section-title">
-                        <h2>Contacts Info</h2>
+                        <h2>Thông tin liên hệ </h2>
                         <p>
-                            We are one of the best agency and we can easily make a contract
-                            us anytime on the below details.
+                         Chúng tôi là một trong những đại lý tốt nhất và chúng tôi có thể dễ dàng ký kết hợp đồng
+                         liên hệ với chúng tôi bất cứ lúc nào theo thông tin chi tiết bên dưới.
                         </p>
                     </div>
 

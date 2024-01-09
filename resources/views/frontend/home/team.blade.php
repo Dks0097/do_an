@@ -5,8 +5,8 @@
 <div class="team-area-three pt-100 pb-70">
     <div class="container">
         <div class="section-title text-center">
-            <span class="sp-color">TEAM</span>
-            <h2>Let's Meet Up With Our Special Team Members</h2>
+            <span class="sp-color">Thành viên</span>
+            <h2>Hãy gặp gỡ các thành viên nhóm đặc biệt của chúng tôi</h2>
         </div>
         <div class="team-slider-two owl-carousel owl-theme pt-45">
 
