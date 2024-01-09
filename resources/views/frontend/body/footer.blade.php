@@ -82,7 +82,7 @@
                         <h3>Liên kết Hữu Ích</h3>
                         <ul class="footer-list">
                             <li>
-                                <a href="index.html" target="_blank">
+                                <a href="{{url('/')}}" target="_blank">
                                     <i class='bx bx-caret-right'></i>
                                     Trang Chủ
                                 </a>
