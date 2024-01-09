@@ -9,12 +9,12 @@
         <div class="inner-title">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="{{url('/')}}">Home</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
-                <li>User Booking List </li>
+                <li><a href="{{ route('dashboard') }}">Bảng điều kiển</a> </li>
             </ul>
-            <h3>User Booking List</h3>
+            <h3>Danh sách đặt chỗ của người dùng</h3>
         </div>
     </div>
 </div>
@@ -43,20 +43,20 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="billing-details">
-                        <h3 class="title">User Booking List  </h3>
+                        <h3 class="title">Danh sách đặt chỗ của người dùng </h3>
 
 
 
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                <th scope="col">B No</th>
-                                <th scope="col">B Date</th>
-                                <th scope="col">Customer</th>
-                                <th scope="col">Room</th>
-                                <th scope="col">Check In/Out</th>
-                                <th scope="col">Total Room</th>
-                                <th scope="col">Status</th> 
+                                <th scope="col">Mã hóa đơn</th>
+                                <th scope="col">Ngày đặt</th>
+                                <th scope="col">Người dùng</th>
+                                <th scope="col">Phòng</th>
+                                <th scope="col">Thời gian nhận/trả phòng</th>
+                                <th scope="col">Số phòng</th>
+                                <th scope="col">Trạng thái</th> 
                                 </tr>
                             </thead>
                             <tbody>
@@ -70,9 +70,9 @@
                                 <td>{{ $item->number_of_rooms }}</td>
                                 <td> 
                                     @if ($item->status == 1)
-                                    <span class="badge bg-success">Complete</span>
+                                    <span class="badge bg-success">Hoàn Thành</span>
                                        @else
-                                       <span class="badge bg-info text-dark">Pending</span>
+                                       <span class="badge bg-info text-dark">Đang xử lí</span>
                                     @endif
                     
                                 </td>

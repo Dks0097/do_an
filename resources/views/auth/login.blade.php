@@ -27,7 +27,7 @@
                     <div class="contact-form">
                         <div class="section-title text-center">
                             <span class="sp-color">Sign In</span>
-                            <h2>Sign In to Your Account!</h2>
+                            <h2>Đăng nhập vào tài khoản của bạn!</h2>
                         </div>
 
                         
@@ -57,19 +57,19 @@
                     </div>
 
                     <div class="col-lg-6 col-sm-6">
-                        <a class="forget" href="{{route('password.request')}}">Forgot My Password?</a>
+                        <a class="forget" href="{{route('password.request')}}">Quên mật khẩu?</a>
                     </div>
 
                     <div class="col-lg-12 col-md-12 text-center">
                         <button type="submit" class="default-btn btn-bg-three border-radius-5">
-                            Sign In Now
+                           Đăng nhập ngay
                         </button>
                     </div>
 
                     <div class="col-12">
                         <p class="account-desc">
-                            Not a Member?
-                            <a href="{{route('register')}}">Sign Up</a>
+                            Bạn không phải là thành viên?
+                            <a href="{{route('register')}}">Đăng ký</a>
                         </p>
                     </div>
                 </div>

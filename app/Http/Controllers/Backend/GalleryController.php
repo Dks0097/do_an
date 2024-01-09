@@ -8,6 +8,8 @@ use App\Models\Gallery;
 use Intervention\Image\Facades\Image;
 use Carbon\Carbon;
 use App\Models\Contact;
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
 
 class GalleryController extends Controller
 {
@@ -124,7 +126,10 @@ class GalleryController extends Controller
      }// End Method
 
      public function StoreContactUs(Request $request){
-
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $content = $request->input('message');
+        $subject = $request->input('subject');
         Contact::insert([
             'name' => $request->name,
             'email' => $request->email,
@@ -133,9 +138,12 @@ class GalleryController extends Controller
             'message' => $request->message,
             'created_at' => Carbon::now(),
         ]);
+        $userMail = new ContactMail($name, $email, $content, $subject);
 
+        // Gửi email đến người quản lý web với địa chỉ là admin@web.com
+        Mail::to('duongnguyen3412@gmail.com')->send($userMail);
         $notification = array(
-            'message' => 'Your Message Send Successfully',
+            'message' => 'Tin nhắn của bạn Gửi thành công',
             'alert-type' => 'success'
         );
 

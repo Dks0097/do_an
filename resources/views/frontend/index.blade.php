@@ -43,7 +43,7 @@
 
                     <div class="col-lg-2 col-md-2">
                         <div class="form-group">
-                            <label>Số Lượng Khách</label>
+                            <label>Số Lượng</label>
                             <select name="persion" class="form-control">
                                 <option>01</option>
                                 <option>02</option>
@@ -55,7 +55,7 @@
 
                     <div class="col-lg-4 col-md-4">
                         <button type="submit" class="default-btn btn-bg-one border-radius-5">
-                            Sẵn sàng kiểm tra
+                            Tìm
                         </button>
                     </div>
                 </div>

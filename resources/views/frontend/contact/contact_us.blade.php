@@ -6,7 +6,7 @@
         <div class="inner-title">
             <ul>
                 <li>
-                    <a href="index.html">Trang Chủ</a>
+                    <a href="{{url('/')}}">Trang Chủ</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
                 <li>Liên Hệ</li>

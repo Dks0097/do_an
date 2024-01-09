@@ -13,9 +13,9 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
-                <li> Dashboard </li>
+                <li> <a href="{{ route('dashboard') }}">Bảng điều kiển</a></li>
             </ul>
-            <h3>View Profile</h3>
+            <h3>Xem hồ sơ</h3>
         </div>
     </div>
 </div>
@@ -44,13 +44,13 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="billing-details">
-                        <h3 class="title">User Profile   </h3>
+                        <h3 class="title">Hồ sơ người dùng   </h3>
 
                     <div class="row">
                         
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Name <span class="required">*</span></label>
+                                <label>Tên <span class="required">*</span></label>
                                 <input type="text" name="name" class="form-control" value="{{ $profileData->name}}">
                             </div>
                         </div>
@@ -67,14 +67,14 @@
 
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Address <span class="required">*</span></label>
+                                <label>Địa chỉ <span class="required">*</span></label>
                                 <input type="text" name="address" class="form-control" value="{{ $profileData->address}}">
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-md-6">
                             <div class="form-group">
-                                <label>Phone <span class="required">*</span></label>
+                                <label>Điện thoại <span class="required">*</span></label>
                                 <input type="text" name="phone" class="form-control" value="{{ $profileData->phone}}">
                             </div>
                         </div>
@@ -83,7 +83,7 @@
 
                         <div class="col-lg-12 col-md-6">
                         <div class="form-group">
-                            <label>Photo  <span class="required">*</span></label>
+                            <label>Ảnh  <span class="required">*</span></label>
                             <input type="file" name="photo" class="form-control" id="image">
                         </div>
                         </div>
@@ -96,7 +96,7 @@
                         </div>
                         </div>
 
-                        <button type="submit" class="btn btn-danger">Save Changes </button>
+                        <button type="submit" class="btn btn-danger">Lưu thay đổi </button>
                         </div>
                     </div>
                 </div>

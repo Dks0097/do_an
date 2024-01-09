@@ -6,7 +6,7 @@
     <div class="container">
         <div class="section-title text-center">
             <span class="sp-color">PHÒNG</span>
-            <h2>CÁC LOẠI PHÒNG & Giá CỦA CHÚNG TÔI</h2>
+            <h2>PHÒNG & Giá CỦA CHÚNG</h2>
         </div>
         <div class="row pt-45">
 

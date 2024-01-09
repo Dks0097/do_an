@@ -40,7 +40,7 @@
                             <li>
                                 <a href="about.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Về chúng tôi
+                                    About
                                 </a>
                             </li> 
                             <li>

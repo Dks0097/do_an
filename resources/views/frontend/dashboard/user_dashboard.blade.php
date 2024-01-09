@@ -13,10 +13,10 @@ $profileData = App\Models\User::find($id);
         <div class="inner-title">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="{{url('/')}}">Home</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
-                <li>Dashboard </li>
+                <li>Bảng điều khiển</li>
             </ul>
             <h3>Welcome {{$profileData->name}} </h3>
         </div>
@@ -40,7 +40,7 @@ $profileData = App\Models\User::find($id);
                         
 
                         <div class="service-article-title">
-                            <h2> Dashboard </h2>
+                            <h2> Bảng điều khiển </h2>
                         </div>
 
                     <div class="service-article-content">
@@ -48,9 +48,9 @@ $profileData = App\Models\User::find($id);
 
                             <div class="col-md-4">
                                 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                                    <div class="card-header">Total Booking</div>
+                                    <div class="card-header">Tổng số đặt phòng</div>
                                     <div   div class="card-body">
-                                        <h1 class="card-title" style="font-size: 45px;">{{ count($booking) }} Total</h1>
+                                        <h1 class="card-title" style="font-size: 45px;">Tổng {{ count($booking) }}</h1>
 
                                     </div>
                                 </div>                   
@@ -58,9 +58,9 @@ $profileData = App\Models\User::find($id);
 
                             <div class="col-md-4">
                                 <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-                                            <div class="card-header">Pending Booking </div>
+                                            <div class="card-header">Đang chờ đặt phòng</div>
                                                 <div class="card-body">
-                                                    <h1 class="card-title" style="font-size: 45px;">{{ count($pending) }} Pending</h1>
+                                                    <h1 class="card-title" style="font-size: 45px;">Đang chờ xử lý {{ count($pending) }}</h1>
 
                                                 </div>
                                 </div>                   
@@ -69,9 +69,9 @@ $profileData = App\Models\User::find($id);
 
                             <div class="col-md-4">
                                 <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                                        <div class="card-header">Complete Booking</div>
+                                        <div class="card-header">Hoàn thành đặt phòng</div>
                                     <div class="card-body">
-                                        <h1 class="card-title" style="font-size: 45px;">{{ count($Complete) }} Complete</h1>
+                                        <h1 class="card-title" style="font-size: 45px;">Hoàn thành {{ count($Complete) }}</h1>
                                     </div>
                                 </div>                   
                             </div>

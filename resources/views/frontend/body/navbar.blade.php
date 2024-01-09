@@ -33,7 +33,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="about.html" class="nav-link">
-                                Về Chúng tôi
+                                About
                             </a>
                         </li>
                         <li class="nav-item">
@@ -62,7 +62,7 @@
 @endphp
                         <li class="nav-item">
                             <a href="{{route('froom.all')}}" class="nav-link">
-                                Các Loại Phòng
+                                 Phòng
                                 <i class='bx bx-chevron-down'></i>
                             </a>
                             <ul class="dropdown-menu">
