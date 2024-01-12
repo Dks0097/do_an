@@ -53,18 +53,18 @@ class UsersTableSeeder extends Seeder
             DB::table('room_types')->insert([
                 //Admin
                 [
-                    'name' => 'Thường'.$i,
+                    'name' => 'Thường'.' '.$i,
                     'created_at'    => date('Y-m-d H:i:s', time()),
                 ],
                 //Users
                 [
                
-                    'name' => 'Vip'.$i,
+                    'name' => 'Vip'.' '.$i,
                     'created_at'    => date('Y-m-d H:i:s', time()),
                 ],
                 [
                
-                    'name' => 'Tổng thống'.$i,
+                    'name' => 'Tổng thống'.' '.$i,
                     'created_at'    => date('Y-m-d H:i:s', time()),
                 ],
                 //Users
@@ -77,7 +77,30 @@ class UsersTableSeeder extends Seeder
             DB::table('rooms')->insert([
                 //Admin
                 [
-                    'roomtype_id' => $i,
+                    'total_adult' =>$i,
+                    'total_child' =>$i,
+                    'room_capacity' =>$i,
+                    'image' =>'room-img1'.$i.'.jpg',
+                    'price' => 100000,
+                    'discount' => $i,
+                   
+                    'created_at'    => date('Y-m-d H:i:s', time()),
+                ],
+                //Users
+               
+                //Users
+              
+            ]);
+            DB::table('room_numbers')->insert([
+                //Admin
+                [
+                    'rooms_id' =>$i,
+                    'room_type_id' =>$i,
+                    'room_no' =>$i,
+                   
+                   
+                    'status' => 1,
+                   
                     'created_at'    => date('Y-m-d H:i:s', time()),
                 ],
                 //Users
