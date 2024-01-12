@@ -164,6 +164,25 @@
 
             </ul>
         </li>
+        <li class="menu-label">Nhà hàng và món ăn</li>
+
+      
+        <li>
+            <a class="has-arrow" href="javascript:;">
+                <div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
+                </div>
+                <div class="menu-title">Nhà hàng</div>
+            </a>
+            <ul>
+                <li> <a href="{{ route('res.category') }}"><i class='bx bx-radio-circle'></i>Nhà hàng Category </a>
+                </li>
+
+                <li> <a href="{{ route('all.res.product') }}"><i class='bx bx-radio-circle'></i>Món ăn</a>
+                </li>
+
+
+            </ul>
+        </li>
         <li class="menu-label">Mail setup</li>
         <li>
             <a class="has-arrow" href="javascript:;">

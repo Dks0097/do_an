@@ -12,6 +12,8 @@ use App\Http\Controllers\Backend\RoomListController;
 use App\Http\Controllers\Backend\SettingController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Backend\BlogController;
+use App\Http\Controllers\Backend\RestaurantController;
+
 use App\Http\Controllers\Backend\CommentController;
 use App\Http\Controllers\Backend\ReportController;
 use App\Http\Controllers\Backend\GalleryController;
@@ -161,7 +163,24 @@ Route::middleware(['auth', 'roles:admin'])->group(function () {
         Route::get('/delete/blog/post/{id}', 'DeleteBlogPost')->name('delete.blog.post');
 
     });
+    Route::controller(RestaurantController::class)->group(function () {
 
+        Route::get('/res/category', 'ResCategory')->name('res.category');
+        Route::post('/store/res/category', 'StoreResCategory')->name('store.res.category');
+        Route::get('/edit/res/category/{id}', 'EditResCategory');
+        Route::post('/update/res/category', 'UpdateResCategory')->name('update.res.category');
+        Route::get('/delete/res/category/{id}', 'DeleteResCategory')->name('delete.res.category');
+    });
+    Route::controller(RestaurantController::class)->group(function () {
+
+        Route::get('/all/res/product', 'AllResProduct')->name('all.res.product');
+        Route::get('/add/res/product', 'AddResProduct')->name('add.res.product');
+        Route::post('/store/res/product', 'StoreResProduct')->name('store.res.product');
+        Route::get('/edit/res/product/{id}', 'EditResProduct')->name('edit.res.product');
+        // Route::post('/update/blog/post', 'UpdateResProduct')->name('update.blog.post');
+        Route::get('/delete/res/product/{id}', 'DeleteResProduct')->name('delete.res.product');
+
+    });
     /// Frontend Comment All Route 
     Route::controller(CommentController::class)->group(function () {
         Route::get('/all/comment/', 'AllComment')->name('all.comment');
@@ -322,6 +341,13 @@ Route::controller(BlogController::class)->group(function () {
     Route::get('/blog/details/{slug}', 'BlogDetails');
     Route::get('/blog/cat/list/{id}', 'BlogCatList');
     Route::get('/blog', 'BlogList')->name('blog.list');
+
+});
+Route::controller(RestaurantController::class)->group(function () {
+
+    Route::get('/res/details/{id}', 'ResDetails');
+    Route::get('/res/cat/list/{id}', 'ResCatList');
+    Route::get('/restaurant', 'ResList')->name('res.list');
 
 });
 

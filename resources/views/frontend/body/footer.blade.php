@@ -84,7 +84,7 @@
                             <li>
                                 <a href="{{url('/')}}" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Trang Chủ
+                                    Trang chủ
                                 </a>
                             </li> 
                             <li>
@@ -108,7 +108,7 @@
                             <li>
                                 <a href="gallery.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Phòng chưng bày
+                                    Phòng trưng bày
                                 </a>
                             </li> 
                             <li>

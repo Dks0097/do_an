@@ -72,8 +72,8 @@
            @endforeach
 
            @if (count($rooms) == count($empty_array))
-           <h3 class="text-center text-danger">Sorry There are no rooms available based on your search preference</h3>
-           <p class="text-center text-danger">Please try again.</p>
+           <h3 class="text-center text-danger">Rất tiếc, không có phòng trống theo sở thích tìm kiếm của bạn</h3>
+           <p class="text-center text-danger">Vui lòng thử lại.</p>
            @endif
            
         </div>

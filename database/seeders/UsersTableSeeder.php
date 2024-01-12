@@ -49,5 +49,43 @@ class UsersTableSeeder extends Seeder
             //Users
           
         ]);
+        for($i=1;$i <= 3;$i++){
+            DB::table('room_types')->insert([
+                //Admin
+                [
+                    'name' => 'Thường'.$i,
+                    'created_at'    => date('Y-m-d H:i:s', time()),
+                ],
+                //Users
+                [
+               
+                    'name' => 'Vip'.$i,
+                    'created_at'    => date('Y-m-d H:i:s', time()),
+                ],
+                [
+               
+                    'name' => 'Tổng thống'.$i,
+                    'created_at'    => date('Y-m-d H:i:s', time()),
+                ],
+                //Users
+              
+            ]);
+
+        }
+        
+        for ($i = 1; $i <= 9; $i++) {
+            DB::table('rooms')->insert([
+                //Admin
+                [
+                    'roomtype_id' => $i,
+                    'created_at'    => date('Y-m-d H:i:s', time()),
+                ],
+                //Users
+               
+                //Users
+              
+            ]);
+        }
+
     }
 }

@@ -27,7 +27,7 @@
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
                             <a href="{{url('/')}}" class="nav-link active">
-                                Trang Chủ
+                                Trang chủ
                                
                             </a>
                         </li>
@@ -37,15 +37,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Nhà Hàng
+                            <a href="{{ route('res.list') }}" class="nav-link">
+                                Nhà hàng
                             </a>
                           
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('show.gallery') }}" class="nav-link">
-                                Phòng Trưng Bày
+                                Phòng trưng bày
                               </a>
                          
                         </li>
@@ -65,21 +65,12 @@
                                  Phòng
                                 <i class='bx bx-chevron-down'></i>
                             </a>
-                            <ul class="dropdown-menu">
-                                @foreach($room as $item)
-                             
-                                <li class="nav-item">
-                                    <a href="{{url('/rooms/details/'.$item->id)}}" class="nav-link">
-                                        {{$item['type']['name']}} 
-                                    </a>
-                                </li>
-                                @endforeach
-                            </ul>
+                           
                         </li>
 
                         <li class="nav-item">
                             <a href="{{ route('contact.us') }}" class="nav-link">
-                                Liên Hệ
+                                Liên hệ
                             </a>
                         </li>
 
@@ -89,7 +80,7 @@
                     </ul>
 
                     <div class="nav-btn">
-                        <a href="{{route('froom.all')}}" class="default-btn btn-bg-one border-radius-5">Đặt Phòng Ngay</a>
+                        <a href="{{route('froom.all')}}" class="default-btn btn-bg-one border-radius-5">Đặt phòng ngay</a>
                     </div>
                 </div>
             </nav>
