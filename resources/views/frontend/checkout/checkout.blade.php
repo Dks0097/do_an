@@ -36,14 +36,14 @@
                 <label>Country <span class="required">*</span></label>
                 <div class="select-box">
                     <select name="country" class="form-control">
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="India">India</option>
-                        <option value="United Arab">United Arab Emirates</option>
-                        <option value="China">China</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="Germany">Germany</option>
-                        <option value="France">France</option>
-                        <option value="Japan">Japan</option>
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="danang">Đà Nẵng</option>
+                        <option value="hochiminh">Thành phố Hồ Chí Minh</option>
+                        <option value="hue">Huế</option>
+                        <option value="dalat">Đà Lạt</option>
+                        <option value="nhatrang">Nha Trang</option>
+                        <option value="halong">Hạ Long</option>
+
                     </select>
                 </div>
             </div>

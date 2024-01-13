@@ -77,10 +77,11 @@ class UsersTableSeeder extends Seeder
             DB::table('rooms')->insert([
                 //Admin
                 [
-                    'total_adult' =>$i,
-                    'total_child' =>$i,
-                    'room_capacity' =>$i,
-                    'image' =>'room-img1'.$i.'.jpg',
+                    'roomtype_id' =>$i,
+                    'total_adult' =>5,
+                    'total_child' =>1,
+                    'room_capacity' =>10,
+                    'image' =>'room-img'.$i.'.jpg',
                     'price' => 100000,
                     'discount' => $i,
                    
@@ -99,7 +100,7 @@ class UsersTableSeeder extends Seeder
                     'room_no' =>$i,
                    
                    
-                    'status' => 1,
+                    'status' => 'Active',
                    
                     'created_at'    => date('Y-m-d H:i:s', time()),
                 ],

@@ -264,7 +264,7 @@ jQuery('#dashboard-map').vectorMap(
     hoverColor: '#009efb',
     markers : [{
         latLng : [21.00, 78.00],
-        name : 'I Love My India'
+        name : 'I Love My VietNam'
       
       }],
     hoverOpacity: null,

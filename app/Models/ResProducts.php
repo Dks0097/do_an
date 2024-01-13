@@ -22,6 +22,7 @@ class ResProducts extends Model
             $query = $query->whereHas('restaurant', function ($query) use ($key) {
                 $query->where('name', 'LIKE', '%' . $key . '%');
             })
+                ->orwhere('name', 'like', '%' . $key . '%')
                 ->orwhere('description', 'like', '%' . $key . '%')
                 ->orWhere('unit_price', 'LIKE', '%' . $key . '%');
               

@@ -223,7 +223,7 @@ class RestaurantController extends Controller
 
      public function ResCatList($id){
 
-        $blog = ResProducts::where('rescat_id',$id)->get();
+        $blog = ResProducts::where('rescat_id',$id)->search()->get();
         $namecat = ResCategory::where('id',$id)->first();
         $bcategory = ResCategory::latest()->get();
         $lpost = ResProducts::latest()->limit(3)->get();
@@ -234,7 +234,7 @@ class RestaurantController extends Controller
 
      public function ResList(){
 
-        $blog = ResProducts::orderBy('created_at', 'DESC')->search()->paginate(12);
+        $blog = ResProducts::latest()->search()->paginate(10);
         $bcategory = ResCategory::latest()->get();
         $lpost = ResProducts::latest()->limit(3)->get();
         // dd($lpost);

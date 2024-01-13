@@ -80,7 +80,7 @@
             <div class="form-group">
                 <label>Numbers of Rooms </label>
                 <select class="form-control number_of_rooms" name="number_of_rooms" id="select_room">
-                    @for ($i = 1; $i <= $roomnumber->room_no ; $i++)
+                    @for ($i = 1; $i <= 5 ; $i++)
                         <option value="{{ sprintf('%02d', $i) }}">{{ sprintf('%02d', $i) }}</option>
                     @endfor
 
@@ -316,7 +316,7 @@
                                 </ul>
                                 
                                 <a href="room-details.html" class="book-more-btn">
-                                    Book Now {{$status}}
+                                    Book Now 
                                 </a>
                             </div>
                         </div>
@@ -338,7 +338,7 @@
        var check_in = "{{ old('check_in') }}";
        var check_out = "{{ old('check_out') }}";
        var room_id = "{{ $room_id }}";
-       var status = "{{ $status }}";
+      
        if (check_in != '' && check_out != ''){
           getAvaility(check_in, check_out, room_id);
        }

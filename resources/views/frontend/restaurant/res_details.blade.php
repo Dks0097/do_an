@@ -129,12 +129,12 @@
                     </div>
 
                     <div class="services-bar-widget">
-                        <h3 class="title">Blog Category</h3>
+                        <h3 class="title">Restaurant Category</h3>
                         <div class="side-bar-categories">
                             @foreach ($bcategory as $cat) 
                             <ul>
                                 <li>
-                                    <a href="{{ url('blog/cat/list/'.$cat->id) }}">{{ $cat->name }}</a>
+                                    <a href="{{ url('res/cat/list/'.$cat->id) }}">{{ $cat->name }}</a>
                                 </li>
                                 
                             </ul>
@@ -143,33 +143,29 @@
                     </div>
 
                     <div class="side-bar-widget">
-                        <h3 class="title">Recent Posts</h3>
+                        <h3 class="title">Recent Restaurant</h3>
                         <div class="widget-popular-post">
                             @foreach ($lpost as $post)   
-                            <article class="item">
-                                <a href="{{ url('res/details/'.$post->id) }}">
-                                    <img src="{{ asset($post->post_image) }}" alt="Images" style="width: 80px; height:80px;">      
-                                </a>
-                                <div class="info">
-                                    <h4 class="title-text">
-                                    
-                                            <a href="{{ url('res/details/'.$post->id) }}">{{ $post->name }}</a>
+                                <article class="item">
+                                    <a href="{{ url('res/details/'.$post->id) }}" class="thumb">
+                                         <img src="{{ asset($post->image) }}" alt="Images" style="width: 80px; height:80px;">      
+                                    </a>
+                                    <div class="info">
+                                        <h4 class="title-text">
+                                            <a href="{{ url('res/details/'.$post->id) }}">
+                                                {{ $post->name }}
+                                            </a>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                
+                                                {{ $post->unit_price }}
+                                            </li>
                                             
-                                        </a>
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <i class='bx bx-user'></i>
-                                            29K
-                                        </li>
-                                        <li>
-                                            <i class='bx bx-message-square-detail'></i>
-                                            15K
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                            @endforeach
+                                        </ul>
+                                    </div>
+                                </article>
+                                @endforeach
                         </div>
                     </div>
 
