@@ -60,10 +60,10 @@
         </td>
         <td align="right">
             <pre class="font" >
-               Đề tài khách sạn
+               Hotel
                Email:duongnguyen3412@gmail.com <br>
                SDT: 0865 710 154 <br>
-               99 Tô Hiến Thành, Đà Nẵng <br>
+               99 To Hien Thanh, Da Nang <br>
 
             </pre>
         </td>
@@ -107,7 +107,7 @@
   <table class="table test_table" style="float: right" border="none">
     <tr>
         <td>Subtotal</td>
-        <td>${{ $editData->subtotal }}</td>
+        <td>${{ $editData->actual_price *  $editData->number_of_rooms }}</td>
     </tr>
     <tr>
         <td>Discount</td>
