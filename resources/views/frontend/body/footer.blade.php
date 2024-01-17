@@ -108,7 +108,7 @@
                             <li>
                                 <a href="gallery.html" target="_blank">
                                     <i class='bx bx-caret-right'></i>
-                                    Phòng trưng bày
+                                    Ảnh Khách sạn
                                 </a>
                             </li> 
                             <li>

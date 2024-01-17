@@ -10,13 +10,13 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Gallery Photo</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả ảnh khách sạn</li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('add.gallery') }}" class="btn btn-primary px-5">Add Gallery </a>
+                <a href="{{ route('add.gallery') }}" class="btn btn-primary px-5">Thêm ảnh </a>
 
             </div>
         </div>
@@ -36,10 +36,10 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            < <th width="50px">Select</th>
-                            <th width="50px">Sl</th>
-                            <th>Image</th> 
-                            <th>Action</th>
+                            < <th width="50px">Lựa chọn</th>
+                            <th width="50px">STT</th>
+                            <th>Ảnh</th> 
+                            <th>Hoạt động</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,7 +62,7 @@
                     </tbody>
 
                 </table>
-                <button type="submit" class="btn btn-danger">Delete Selected</button>
+                <button type="submit" class="btn btn-danger">Xóa mục đã chọn</button>
             </form>   
             </div>
         </div>

@@ -10,13 +10,13 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Room List </li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả danh sách phòng </li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('add.room.list') }}" class="btn btn-primary px-5">Add Booking </a>
+                <a href="{{ route('add.room.list') }}" class="btn btn-primary px-5">Thêm đặt chỗ </a>
             </div>
         </div>
     </div>
@@ -31,14 +31,14 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Room Type</th>
-                            <th>Room Number</th>
-                            <th>B Status </th>
-                            <th>In/Out Date</th>
-                            <th>Booking No</th>
-                            <th>Customer</th>
-                            <th>Status</th>
+                            <th>STT</th>
+                            <th>Loại phòng</th>
+                            <th>Số phòng</th>
+                            <th>Trạng thái </th>
+                            <th>In/Out Ngày</th>
+                            <th>Số đặt phòng</th>
+                            <th>Khách hàng</th>
+                            <th>Hoạt động</th>
                         </tr>
                     </thead>
                     <tbody>

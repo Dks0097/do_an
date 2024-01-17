@@ -4,26 +4,26 @@
 <div class="page-content">
     <!--breadcrumb-->
     <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-        <div class="breadcrumb-title pe-3">Teams</div>
+        <div class="breadcrumb-title pe-3">Thành Viên</div>
         <div class="ps-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Team Members </li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả Thành viên </li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
                
-                <a href="{{route('add.team')}}" class="btn btn-primary">Add New Team Memeber</a>
+                <a href="{{route('add.team')}}" class="btn btn-primary">Thêm thành viên mới</a>
                 
             </div>
         </div>
     </div>
     
-    <h6 class="mb-0 text-uppercase">All Team Members</h6>
+    <h6 class="mb-0 text-uppercase">Tất cả thành viên </h6>
     <hr/>
     <div class="card">
         <div class="card-body">
@@ -31,15 +31,15 @@
                 <table id="example2" class="table table-striped table-bordered">
                     <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Position</th>
+                            <th>STT</th>
+                            <th>Ảnh</th>
+                            <th>Tên</th>
+                            <th>Chức vụ</th>
                             <th>Facebook</th>
                             <th>Instagram</th>
                             <th>Twitter</th>
                             <th>Linkedin</th>
-                            <th>Action</th>
+                            <th>Hoạt động</th>
                         </tr>
                     </thead>
                     <tbody>

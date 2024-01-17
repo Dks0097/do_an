@@ -5,13 +5,13 @@
 <div class="page-content">
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Booking Report </div>
+					<div class="breadcrumb-title pe-3">Báo cáo đặt phòng </div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
 								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
 								</li>
-								<li class="breadcrumb-item active" aria-current="page">Booking Report</li>
+								<li class="breadcrumb-item active" aria-current="page">Báo cáo đặt phòng</li>
 							</ol>
 						</nav>
 					</div>
@@ -34,19 +34,19 @@
 
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">Start Date</label>
+        <label for="input1" class="form-label">Ngày bắt đầu</label>
         <input type="date" name="start_date" class="form-control" id="input1"  >
     </div>
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">End Date</label>
+        <label for="input1" class="form-label">Ngày kết thúc</label>
         <input type="date" name="end_date" class="form-control" id="input1"  >
     </div>
 
 
                                         <div class="col-md-12">
                                             <div class="d-md-flex d-grid align-items-center gap-3">
-                                                <button type="submit" class="btn btn-primary px-4">Search </button>
+                                                <button type="submit" class="btn btn-primary px-4">Tìm kiếm: </button>
 
                                             </div>
                                         </div>

@@ -10,14 +10,14 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Blog Category</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả danh mục blog</li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
              <div class="btn-group"> 
 
-                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Blog Category</button>
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Tất cả danh mục blog</button>
             </div>
         </div>
     </div>
@@ -32,10 +32,10 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Category Name </th>
-                            <th>Category Slug</th> 
-                            <th>Action</th>
+                            <th>STT</th>
+                            <th>Tên danh mục</th>
+                            <th>Slug danh mục</th> 
+                            <th>Hoạt động</th>
                         </tr>
                     </thead>
                     <tbody>

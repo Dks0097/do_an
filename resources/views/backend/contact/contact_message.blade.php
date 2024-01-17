@@ -10,7 +10,7 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Contact Message </li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả tin nhắn liên hệ </li>
                 </ol>
             </nav>
         </div>
@@ -31,13 +31,13 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Name</th>
+                            <th>STT</th>
+                            <th>Tên</th>
                             <th>Email</th>
-                            <th>Phone</th>
-                            <th>Subject</th>
-                            <th>Message</th>
-                            <th>Time</th>
+                            <th>Số điện thoại</th>
+                            <th>Chủ thể</th>
+                            <th>Tin nhắn liên hệ</th>
+                            <th>Thời gian</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -47,7 +47,7 @@
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->email }}</td>
                             <td>{{ $item->phone }}</td>
-                            <td>{{ $item->subject }}</td>
+                              <td>{{ $item->subject }}</td>
                             <td>{{ $item->message }}</td>
                             <td>{{ Carbon\Carbon::parse($item->created_at)->diffForHumans()  }}</td>
 

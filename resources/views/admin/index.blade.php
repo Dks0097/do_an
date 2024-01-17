@@ -22,9 +22,9 @@
             <div class="card-body">
                 <div class="d-flex align-items-center">
                     <div>
-                      <p class="mb-0 text-secondary">Total Booking</p>
+                      <p class="mb-0 text-secondary">Tổng Số Lượt Đặt Phòng</p>
                       <h4 class="my-1 text-info">{{ count($bookings) }}</h4>
-                      <p class="mb-0 font-13">Today Sale:  ${{ $todayprice }}</p>
+                      <p class="mb-0 font-13">Giảm giá hôm nay:  ${{ $todayprice }}</p>
                     </div>
                     <div class="widgets-icons-2 rounded-circle bg-gradient-blues text-white ms-auto"><i class='bx bxs-cart'></i>
                     </div>
@@ -37,9 +37,9 @@
            <div class="card-body">
                <div class="d-flex align-items-center">
                    <div>
-                    <p class="mb-0 text-secondary">Pending Bookings</p>
+                    <p class="mb-0 text-secondary">Số Phòng Đang Chờ Xử Lý</p>
                     <h4 class="my-1 text-danger">{{ count($pending) }}</h4>
-                       <p class="mb-0 font-13">+5.4% from last week</p>
+                       <p class="mb-0 font-13">+5.4% Từ tuần trước</p>
                    </div>
                    <div class="widgets-icons-2 rounded-circle bg-gradient-burning text-white ms-auto"><i class='bx bxs-wallet'></i>
                    </div>
@@ -52,9 +52,9 @@
            <div class="card-body">
                <div class="d-flex align-items-center">
                    <div>
-                    <p class="mb-0 text-secondary">Complete Booking</p>
+                    <p class="mb-0 text-secondary">Số Phòng Đã Đặt Thành Công</p>
                     <h4 class="my-1 text-success">{{ count($complete) }}</h4>
-                       <p class="mb-0 font-13">-4.5% from last week</p>
+                       <p class="mb-0 font-13">-4.5% Từ tuần trước</p>
                    </div>
                    <div class="widgets-icons-2 rounded-circle bg-gradient-ohhappiness text-white ms-auto"><i class='bx bxs-bar-chart-alt-2' ></i>
                    </div>
@@ -67,9 +67,9 @@
            <div class="card-body">
                <div class="d-flex align-items-center">
                    <div>
-                    <p class="mb-0 text-secondary">Total Price</p>
+                    <p class="mb-0 text-secondary">Tổng Doanh Thu</p>
                     <h4 class="my-1 text-warning">${{ $totalPrice  }}</h4>
-                       <p class="mb-0 font-13">+8.4% from last week</p>
+                       <p class="mb-0 font-13">+8.4% Từ tuần trước</p>
                    </div>
                    <div class="widgets-icons-2 rounded-circle bg-gradient-orange text-white ms-auto"><i class='bx bxs-group'></i>
                    </div>
@@ -85,7 +85,7 @@
             <div class="card-header">
                 <div class="d-flex align-items-center">
                     <div>
-                        <h6 class="mb-0">Sales Overview</h6>
+                        <h6 class="mb-0">Tổng quan về doanh số</h6>
                     </div>
               
                 </div>
@@ -107,7 +107,7 @@
         <div class="card-header">
             <div class="d-flex align-items-center">
                 <div>
-                  <h6 class="mb-0">Recent Booking</h6>
+                  <h6 class="mb-0">Phòng đã đặt gần đây</h6>
                 </div>
             </div>
         </div>

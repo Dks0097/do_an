@@ -33,7 +33,7 @@
             <div class="card-body">
                 <div class="row mb-3">
                     <div class="col-sm-3">
-                        <h6 class="mb-0"> Short title</h6>
+                        <h6 class="mb-0"> Tiêu đề ngắn</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
                         <input type="text" name="short_title" class="form-control" value="{{$book->short_title}}"  />
@@ -41,7 +41,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-sm-3">
-                        <h6 class="mb-0">Main Title</h6>
+                        <h6 class="mb-0">Tiêu đề chính</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
                         <input type="text" name="main_title"  class="form-control"  value="{{$book->main_title}}"  />
@@ -49,7 +49,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col-sm-3">
-                        <h6 class="mb-0">Short description</h6>
+                        <h6 class="mb-0">Mô tả ngắn</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
                         <textarea type="text" name="short_desc" id="input40" rows="3" class="form-control" placeholder="Description">{{$book->short_desc}}</textarea>
@@ -68,7 +68,7 @@
 
                 <div class="row mb-3">
                     <div class="col-sm-3">
-                        <h6 class="mb-0">Photo </h6>
+                        <h6 class="mb-0">Ảnh </h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
                         <input class="form-control" name="image" type="file" id="image">
@@ -91,7 +91,7 @@
                 <div class="row">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-9 text-secondary">
-                        <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                        <input type="submit" class="btn btn-primary px-4" value="Lưu thay đổi" />
                     </div>
                 </div>
             </div>

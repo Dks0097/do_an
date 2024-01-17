@@ -13,7 +13,7 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">{{$profileData->name}} Profile</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{$profileData->name}} Thông tin</li>
                 </ol>
             </nav>
         </div>
@@ -39,11 +39,11 @@
                                
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram me-2 icon-inline text-danger"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Instagram</h6>
-                                    <span class="text-secondary">codervent</span>
+                                    <span class="text-secondary">lập trình viên</span>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook me-2 icon-inline text-primary"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>Facebook</h6>
-                                    <span class="text-secondary">codervent</span>
+                                    <span class="text-secondary">lập trình viên</span>
                                 </li>
                             </ul>
                         </div>
@@ -56,7 +56,7 @@
                          <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Full Name</h6>
+                                    <h6 class="mb-0">Họ & Tên</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     <input type="text" name="name" class="form-control" value="{{$profileData->name}}" />
@@ -72,7 +72,7 @@
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Phone</h6>
+                                    <h6 class="mb-0">Số điện thoại</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     <input type="text" name="phone" class="form-control" value="{{$profileData->phone}}" />
@@ -81,7 +81,7 @@
                            
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Address</h6>
+                                    <h6 class="mb-0">Địa chỉ </h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     <input type="text" name="address" class="form-control" value="{{$profileData->address}}" />
@@ -90,7 +90,7 @@
 
                             <div class="row mb-3">
                                 <div class="col-sm-3">
-                                    <h6 class="mb-0">Photo</h6>
+                                    <h6 class="mb-0">Ảnh</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
                                     <input type="file" name="photo" class="form-control" id="image" />
@@ -110,7 +110,7 @@
                             <div class="row">
                                 <div class="col-sm-3"></div>
                                 <div class="col-sm-9 text-secondary">
-                                    <input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+                                    <input type="submit" class="btn btn-primary px-4" value="Lưu Thay Đổi" />
                                 </div>
                             </div>
                         </div>

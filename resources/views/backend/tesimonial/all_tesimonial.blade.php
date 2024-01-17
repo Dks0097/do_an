@@ -10,13 +10,13 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Testimonial</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả đánh giá </li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('add.testimonial') }}" class="btn btn-primary px-5">Add Testimonial </a>
+                <a href="{{ route('add.testimonial') }}" class="btn btn-primary px-5">Thêm đánh giá </a>
 
             </div>
         </div>
@@ -32,11 +32,11 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>City</th> 
-                            <th>Action</th>
+                            <th>STT</th>
+                            <th>Ảnh</th>
+                            <th>Tên</th>
+                            <th>Thành phố</th> 
+                            <th>Hoạt động</th>
                         </tr>
                     </thead>
                     <tbody>

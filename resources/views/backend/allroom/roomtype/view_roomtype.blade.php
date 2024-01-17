@@ -21,13 +21,13 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Room Type List</li>
+                    <li class="breadcrumb-item active" aria-current="page">Danh sách loại phòng</li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{route('add.room.type')}}" class="btn btn-primary ">Add Room type</a>
+                <a href="{{route('add.room.type')}}" class="btn btn-primary ">Thêm loại phòng</a>
             </div>
         </div>
     </div>
@@ -39,10 +39,10 @@
                 <table id="example2" class="table table-striped table-bordered">
                     <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Action</th>
+                            <th>STT</th>
+                            <th>Ảnh</th>
+                            <th>Tên Phòng</th>
+                            <th>Hoạt động</th>
                         </tr>
                     </thead>
                     <tbody>

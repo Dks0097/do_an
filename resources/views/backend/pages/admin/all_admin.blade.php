@@ -10,13 +10,13 @@
                 <ol class="breadcrumb mb-0 p-0">
                     <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Admin User</li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả người dùng quản trị</li>
                 </ol>
             </nav>
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{ route('add.admin') }}" class="btn btn-primary px-5">Add Admin </a>  
+                <a href="{{ route('add.admin') }}" class="btn btn-primary px-5">Thêm người dùng quản trị</a>  
             </div>
 
 
@@ -33,13 +33,13 @@
                 <table id="example" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Sl</th>
-                            <th>Image </th>
-                            <th>Name </th> 
+                            <th>STT</th>
+                            <th>Ảnh </th>
+                            <th>Tên </th> 
                             <th>Email </th>
-                            <th>Phone </th>
-                            <th>Role </th> 
-                            <th>Action</th>
+                            <th>Số điện thoại </th>
+                            <th>Vai trò </th> 
+                            <th>Hoạt động</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,8 +61,8 @@
    
             </td>  
             <td>
-<a href="{{ route('edit.admin',$item->id) }}" class="btn btn-warning px-3 radius-30"> Edit</a>
-<a href="{{ route('delete.admin',$item->id) }}" class="btn btn-danger px-3 radius-30" id="delete"> Delete</a>
+<a href="{{ route('edit.admin',$item->id) }}" class="btn btn-warning px-3 radius-30"> Điều chỉnh</a>
+<a href="{{ route('delete.admin',$item->id) }}" class="btn btn-danger px-3 radius-30" id="delete"> Xóa</a>
 
             </td>
         </tr>

@@ -5,13 +5,13 @@
 <div class="page-content">
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Add Admin User </div>
+					<div class="breadcrumb-title pe-3">Thêm người dùng quản trị </div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
 								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
 								</li>
-								<li class="breadcrumb-item active" aria-current="page">Add Admin User</li>
+								<li class="breadcrumb-item active" aria-current="page">Thêm người dùng quản trị</li>
 							</ol>
 						</nav>
 					</div>
@@ -34,39 +34,39 @@
 
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">Admin User Name </label>
+        <label for="input1" class="form-label">Tên người dùng quản trị viên </label>
         <input type="text" name="name" class="form-control"   >
 
     </div>
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">Admin User Email </label>
+        <label for="input1" class="form-label">Email người dùng quản trị </label>
         <input type="email" name="email" class="form-control"   >
 
     </div>
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">Admin User Phone </label>
+        <label for="input1" class="form-label"> Số Điện thoại người dùng của quản trị viên </label>
         <input type="text" name="phone" class="form-control"   >
 
     </div>
     <div class="col-md-6">
-        <label for="input1" class="form-label">Admin User Address </label>
+        <label for="input1" class="form-label">Địa chỉ người dùng quản trị </label>
         <input type="text" name="address" class="form-control"   >
 
     </div>
 
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">Admin Password </label>
+        <label for="input1" class="form-label">Mật khẩu quản trị</label>
         <input type="password" name="password" class="form-control"   >
 
     </div>
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">Role Name </label>
+        <label for="input1" class="form-label">Tên vai trò </label>
         <select name="roles" class="form-select mb-3" aria-label="Default select example">
-            <option selected="">Select Role </option>
+            <option selected="">Chọn vai trò </option>
             @foreach ($roles as $role)
             <option value="{{ $role->name }}">{{ $role->name }} </option> 
             @endforeach
@@ -79,7 +79,7 @@
 
                     <div class="col-md-12">
                         <div class="d-md-flex d-grid align-items-center gap-3">
-                            <button type="submit" class="btn btn-primary px-4">Save Changes </button>
+                            <button type="submit" class="btn btn-primary px-4">Lưu thay đổi </button>
 
                         </div>
                     </div>

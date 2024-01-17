@@ -49,8 +49,8 @@
                                         {{asset('backend/assets/images/logo-icon.png')}}" width="60" alt="">
 									</div>
 									<div class="text-center mb-4">
-										<h5 class="">House of Koye Admin</h5>
-										<p class="mb-0">Please log in to your account</p>
+										<h5 class="">Quản trị viên Nhà Koye</h5>
+										<p class="mb-0">Xin hãy đăng nhập vào tài khoản của bạn</p>
 									</div>
 									<div class="form-body">
                                             <form class="row g-3" method="POST" action="{{ route('login') }}">
@@ -58,7 +58,7 @@
 
 
 											<div class="col-12">
-												<label for="inputEmailAddress" class="form-label">Login Details</label>
+												<label for="inputEmailAddress" class="form-label">Thông tin thêm về đăng nhập</label>
 												<input type="login" name="login" class="form-control 
                                                  @error('login')
                                                      is-invalid
@@ -71,7 +71,7 @@
                                                 @enderror
 											</div>
 											<div class="col-12">
-												<label for="inputChoosePassword" class="form-label">Password</label>
+												<label for="inputChoosePassword" class="form-label">Mật khẩu</label>
 												<div class="input-group" id="show_hide_password">
 													<input type="password" class="form-control border-end-0" name="password" id="password"  placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class="bx bx-hide"></i></a>
 												</div>
@@ -79,25 +79,25 @@
 											<div class="col-md-6">
 												<div class="form-check form-switch">
 													<input class="form-check-input" type="checkbox" id="remember_me">
-													<label class="form-check-label" for="remember_me">Remember Me</label>
+													<label class="form-check-label" for="remember_me">Lưu mật khẩu</label>
 												</div>
 											</div>
-											<div class="col-md-6 text-end">	<a href="{{ route('password.request') }}">Forgot Password ?</a>
+											<div class="col-md-6 text-end">	<a href="{{ route('password.request') }}">Quên mật khẩu ?</a>
 											</div>
 											<div class="col-12">
 												<div class="d-grid">
-													<button type="submit" class="btn btn-primary">Sign in</button>
+													<button type="submit" class="btn btn-primary">Đăng nhập</button>
 												</div>
 											</div>
 											<div class="col-12">
 												<div class="text-center ">
-													<p class="mb-0">Don't have an account yet? <a href="authentication-signup.html"> here</a>
+													<p class="mb-0"> Bạn vẫn chưa có tài khoản? <a href="authentication-signup.html"> Đăng kí tại đây</a>
 													</p>
 												</div>
 											</div>
 										</form>
 									</div>
-									<div class="login-separater text-center mb-5"> <span>OR SIGN IN WITH</span>
+									<div class="login-separater text-center mb-5"> <span>HOẶC ĐĂNG NHẬP BẰNG</span>
 										<hr>
 									</div>
 									<div class="list-inline contacts-social text-center">
