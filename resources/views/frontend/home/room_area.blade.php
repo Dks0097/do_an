@@ -27,7 +27,7 @@
                                  <h3>
                                     <a href="{{url('/rooms/details/'.$item->id)}}">{{ $item['type']['name'] }}</a>
                                 </h3>
-                                <span>{{($item->price)}} / Per Night</span>
+                                <span>{{($item->price)}} / Mỗi đêm</span>
                                 <div class="rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -39,7 +39,7 @@
                                     {{($item->short_desc)}}
                                 </p>
                                     <ul>
-                                    <li><i class='bx bx-user'></i> {{($item->capacity)}} Person</li>
+                                    <li><i class='bx bx-user'></i> {{($item->capacity)}} Người</li>
                                     <li><i class='bx bx-expand'></i> {{($item->size)}}ft2</li>
                                 </ul>
 

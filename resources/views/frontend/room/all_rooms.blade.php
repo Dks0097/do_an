@@ -38,7 +38,7 @@
                         <h3><a href="{{url('/rooms/details/'.$item->id)}}">{{ $item['type']['name'] }}</a></h3>
                         <ul>
                             <li class="text-color">{{($item->price)}}</li>
-                            <li class="text-color">Per Night</li>
+                            <li class="text-color">Mỗi đêm</li>
                         </ul>
                         <div class="rating text-color">
                             <i class='bx bxs-star'></i>

@@ -5,13 +5,13 @@
 <div class="page-content">
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Edit Blog Post</div>
+					<div class="breadcrumb-title pe-3">Chỉnh sửa bài đăng trên blog</div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
 								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
 								</li>
-								<li class="breadcrumb-item active" aria-current="page">Edit Blog Post</li>
+								<li class="breadcrumb-item active" aria-current="page">Chỉnh sửa bài đăng trên blog</li>
 							</ol>
 						</nav>
 					</div>
@@ -34,9 +34,9 @@
                     <input type="hidden" name="id" value="{{ $post->id }}">
 
                     <div class="col-md-6">
-                        <label for="input7" class="form-label">Blog Category</label>
+                        <label for="input7" class="form-label">Chuyên mục blog</label>
                         <select name="rescat_id" id="input7" class="form-select">
-                            <option selected="">Select Category </option>
+                            <option selected="">Chọn danh mục </option>
                             @foreach ( $blogcat as $cat) 
                             <option value="{{ $cat->id }}" {{ $cat->id == $post->rescat_id ? 'selected' : '' }} >{{ $cat->name }}</option>
                             @endforeach
@@ -45,28 +45,28 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">name</label>
+                        <label for="input1" class="form-label">Tên</label>
                         <input type="text" name="name" class="form-control" id="input1" value="{{ $post->name }}" >
                     </div>
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">unit_price</label>
+                        <label for="input1" class="form-label">Bảng giá</label>
                         <input type="number" name="unit_price" class="form-control" id="input1"  value="{{ $post->unit_price }}"  >
                     </div>
                    
 
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">promotion_price</label>
+                        <label for="input1" class="form-label">Giá ưu đãi</label>
                         <input type="number" name="promotion_price" class="form-control" id="input1"value="{{ $post->promotion_price }}"  >
                     </div>
 
                     <div class="col-md-12">
-                        <label for="input11" class="form-label">Short Description</label>
+                        <label for="input11" class="form-label">Mô tả ngắn</label>
                         <textarea name="description" class="form-control" id="input11"   rows="3">{!! $post->description !!}</textarea>
                     </div>
 
 
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">Post Title</label>
+                        <label for="input1" class="form-label">Tiêu đề bài viết</label>
                         <input class="form-control" name="post_image" type="file" id="image">
                     </div>
 
@@ -80,7 +80,7 @@
 
                     <div class="col-md-12">
                         <div class="d-md-flex d-grid align-items-center gap-3">
-                            <button type="submit" class="btn btn-primary px-4">Submit</button>
+                            <button type="submit" class="btn btn-primary px-4">Nhập</button>
 
                         </div>
                     </div>

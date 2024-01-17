@@ -8,12 +8,12 @@
         <div class="inner-title">
             <ul>
                 <li>
-                    <a href="{{url('/')}}">Home</a>
+                    <a href="{{url('/')}}">Trang chủ</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
                 <li>
                     <a href="{{route('froom.all')}}">
-                        View All Rooms
+                    Xem tất cả các phòng
                     </a>
                  </li>
             </ul>
@@ -30,7 +30,7 @@
             <div class="col-lg-4">
                 <div class="room-details-side">
                     <div class="side-bar-form">
-                        <h3>Booking Sheet </h3>
+                        <h3>Phiếu đặt chỗ </h3>
 
 <form action="{{ route('user_booking_store',$roomdetails->id) }}" method="post" id="bk_form">
     @csrf
@@ -63,7 +63,7 @@
 
         <div class="col-lg-12">
             <div class="form-group">
-                <label>Numbers of Persons</label>
+                <label>Số người</label>
                 <select class="form-control" name="persion" id="nmbr_person">
                 @for ($i = 1; $i <= 5; $i++) 
       <option {{ old('persion') == $i ? 'selected' : '' }} value="0{{ $i }}" >0{{ $i }} </option>
@@ -78,7 +78,7 @@
 
         <div class="col-lg-12">
             <div class="form-group">
-                <label>Numbers of Rooms </label>
+                <label>Số phòng</label>
                 <select class="form-control number_of_rooms" name="number_of_rooms" id="select_room">
                     @for ($i = 1; $i <= 5 ; $i++)
                         <option value="{{ sprintf('%02d', $i) }}">{{ sprintf('%02d', $i) }}</option>
@@ -97,17 +97,17 @@
                 
     <tbody>
         <tr> 
-        <td><p> SubTotal</p></td>
+        <td><p> Tổng phụ</p></td>
         <td style="text-align: right" ><span class="t_subtotal">0</span> </td> 
         </tr>
 
         <tr> 
-        <td><p> Discount</p></td>
+        <td><p> Giảm giá</p></td>
         <td style="text-align: right" ><span class="t_discount">0</span></td> 
         </tr>
 
         <tr> 
-        <td><p> Total</p></td>
+        <td><p> Tổng cộng</p></td>
         <td style="text-align: right" ><span class="t_g_total">0</span></td> 
         </tr>
         
@@ -123,7 +123,7 @@
 
         <div class="col-lg-12 col-md-12">
             <button type="submit" class="default-btn btn-bg-three border-radius-5">
-                Book Now
+            Đặt ngay bây giờ
             </button>
         </div>
     </div>
@@ -170,7 +170,7 @@
 
 
 <div class="side-bar-plan">
-                        <h3>Basic Plan Facilities</h3>
+                        <h3>Cơ sở vật chất của gói cơ bản</h3>
                         <ul>
                             @foreach ($facility as $fac) 
                             <li><a href="#">{{ $fac->facility_name }}</a></li>
@@ -192,7 +192,7 @@
 
 
 <div class="services-bar-widget">
-                        <h3 class="title">Room Details </h3>
+                        <h3 class="title">Chi tiết phòng</h3>
 <div class="side-bar-list">
     <ul>
        <li>
@@ -216,7 +216,7 @@
 
 <div class="col-lg-6">
 <div class="services-bar-widget">
-<h3 class="title">Room Details </h3>
+<h3 class="title">Chi tiết phòng </h3>
 <div class="side-bar-list">
     <ul>
        <li>
@@ -238,9 +238,9 @@
                     </div>
 
                     <div class="room-details-review">
-                        <h2>Clients Review and Retting's</h2>
+                        <h2>Đánh giá của khách hàng và Retting's</h2>
                         <div class="review-ratting">
-                            <h3>Your retting: </h3>
+                            <h3>Sự reting của bạn: </h3>
                             <i class='bx bx-star'></i>
                             <i class='bx bx-star'></i>
                             <i class='bx bx-star'></i>
@@ -257,7 +257,7 @@
 
                                 <div class="col-lg-12 col-md-12">
                                     <button type="submit" class="default-btn btn-bg-three">
-                                        Submit Review
+                                    Gửi đánh giá
                                     </button>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@
 <div class="room-details-other pb-70">
     <div class="container">
         <div class="room-details-text">
-            <h2>Other Rooms </h2>
+            <h2>Các phòng khác </h2>
         </div>
 
         <div class="row ">
@@ -316,7 +316,7 @@
                                 </ul>
                                 
                                 <a href="room-details.html" class="book-more-btn">
-                                    Book Now 
+                                    Đặt ngay bây giờ
                                 </a>
                             </div>
                         </div>
