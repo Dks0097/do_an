@@ -55,7 +55,7 @@ class UserController extends Controller
       $data->save();
 
       $notification = array(
-         'message' => 'Profile Updated Successfully',
+         'message' => 'Hồ sơ được cập nhật thành công',
          'alert-type' => 'success',
       );
       return redirect()->back()->with($notification);
@@ -70,7 +70,7 @@ class UserController extends Controller
       $request->session()->regenerateToken();
 
       $notification = array(
-         'message' => 'Logout Successfully',
+         'message' => 'Đăng xuất thành công',
          'alert-type' => 'info',
       );
       return redirect('/login')->with($notification);
@@ -107,7 +107,7 @@ class UserController extends Controller
       ]);
 
       $notification = array(
-          'message' => 'Password Change Successfully',
+          'message' => 'Đổi mật khẩu thành công',
           'alert-type' => 'success'
       );
 

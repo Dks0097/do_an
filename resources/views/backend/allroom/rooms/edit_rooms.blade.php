@@ -15,7 +15,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="tab-icon"><i class="bx bx-home font-18 me-1"></i>
                                                     </div>
-                                                    <div class="tab-title">Manage Room </div>
+                                                    <div class="tab-title">Quản lý phòng </div>
                                                 </div>
                                             </a>
                                         </li>
@@ -24,7 +24,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="tab-icon"><i class="bx bx-user-pin font-18 me-1"></i>
                                                     </div>
-                                                    <div class="tab-title">Room Number</div>
+                                                    <div class="tab-title">số phòng</div>
                                                 </div>
                                             </a>
                                         </li>
@@ -37,24 +37,24 @@
                             
                                                 <div class="card">
                                                     <div class="card-body p-4">
-                                                        <h5 class="mb-4">Update Room</h5>
+                                                        <h5 class="mb-4">Cập nhật phòng</h5>
                                 <form class="row g-3 " action="{{route('update.room', $editData->id)}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="col-md-4">
-                                        <label for="input1" class="form-label">Room Type Name</label>
+                                        <label for="input1" class="form-label">Tên phòng</label>
                                         <input type="text" name="roomtype_id" class="form-control" id="input1" value="{{$editData['type']['name']}}">
                                     </div>
                                     <div class="col-md-4">
-                                        <label for="input2" class="form-label">Total Adult</label>
+                                        <label for="input2" class="form-label">Tổng số người lớn</label>
                                         <input type="text" name="total_adult" class="form-control" id="input2" value="{{$editData->total_adult}}">
                                     </div>
                                     <div class="col-md-4">
-                                        <label for="input2" class="form-label">Total Child</label>
+                                        <label for="input2" class="form-label">Tổng số trẻ em</label>
                                         <input type="text" name="total_child" class="form-control" id="input2" value="{{$editData->total_child}}">
                                     </div>
                                     
                                     <div class="col-md-6">
-                                        <label for="input3" class="form-label">Main Image</label>
+                                        <label for="input3" class="form-label">Hình ảnh chính</label>
                                         <input type="file"  name="image" class="form-control" id="image"><br>
                                         <img id="showImage" src="{{ (!empty($editData->image)) ? url('upload/roomimg/'.$editData->image) : url('upload/no_image.jpg') }}" alt="Admin" class=" bg-primary" width="70" height="60">
                 
@@ -64,7 +64,7 @@
 
 
                                     <div class="col-md-6">
-                                        <label for="input4" class="form-label">Gallery Image</label>
+                                        <label for="input4" class="form-label">Hình ảnh thư viện</label>
                                         <input type="file"  name="multi_img[]" class="form-control" multiple id="multiImg" accept="image/jpeg, image/jpg, image/gif, image/png">
 
                                         @foreach ($multiimgs as $item)
@@ -80,19 +80,19 @@
                                     
 
                                     <div class="col-md-3">
-                                        <label for="input1" class="form-label">Room Price</label>
+                                        <label for="input1" class="form-label">Giá phòng</label>
                                         <input type="text" name="price" class="form-control" id="input1" value="{{$editData->price}}">
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="input2" class="form-label">size </label>
+                                        <label for="input2" class="form-label">kích thước </label>
                                         <input type="text" name="size" class="form-control" id="input2" value="{{$editData->size}}">
                                     </div>
                                     <div class="col-md-3">
-                                        <label for="input2" class="form-label">Discount (%)</label>
+                                        <label for="input2" class="form-label">Giảm giá (%)</label>
                                         <input type="text" name="discount" class="form-control" id="input2" value="{{$editData->discount}}">
                                     </div> 
                                     <div class="col-md-3">
-                                        <label for="input2" class="form-label">Room Capcaity</label>
+                                        <label for="input2" class="form-label">Công suất phòng</label>
                                         <input type="text" name="room_capacity" class="form-control" id="input2" value="{{$editData->room_capacity}}">
                                     </div>
 
@@ -100,11 +100,11 @@
                                        
                                         
                                         <div class="col-md-12">
-                                            <label for="input7" class="form-label">Room View</label>
+                                            <label for="input7" class="form-label">View phòng</label>
                                             <select name="view" id="input7" class="form-select">
-                                                <option selected="">Choose...</option>
-                                                <option value="Sea View" {{$editData->view == 'Sea View'?'selected':''}}>Sea View</option>
-                                                <option value="Hill View" {{$editData->view == 'Hill View'?'selected':''}}>Hill View</option>
+                                                <option selected="">chọn...</option>
+                                                <option value="hướng biển" {{$editData->view == 'hướng biển'?'selected':''}}>hướng biển</option>
+                                                <option value="hướng đồi" {{$editData->view == 'hướng đồi'?'selected':''}}>hướng đồi</option>
                                             
                                             </select>
                                         </div>
@@ -115,23 +115,23 @@
                                        
                                        
                                         <div class="col-md-12">
-                                            <label for="input7" class="form-label">Bed style</label>
+                                            <label for="input7" class="form-label">Kiểu giường</label>
                                             <select name="bed_style" id="input7" class="form-select">
-                                                <option selected="">Choose...</option>
-                                                <option value="Queen bed" {{$editData->bed_style == 'Queen Bed'?'selected':''}}>Queen Bed</option>
-                                                <option value="Twin Bed" {{$editData->bed_style == 'Twin Bed'?'selected':''}}>Twin Bed</option>
-                                                <option value="King Bed" {{$editData->bed_style == 'King Bed'?'selected':''}}>King Bed</option>
+                                                <option selected="">Chọn...</option>
+                                                <option value="giường nữ hoàng" {{$editData->bed_style == 'giường nữ hoàng'?'selected':''}}>giường nữ hoàng</option>
+                                                <option value="giường đôi" {{$editData->bed_style == 'giường đôi'?'selected':''}}>giường đôi</option>
+                                                <option value="giường vua" {{$editData->bed_style == 'giường vua'?'selected':''}}>giường vua</option>
                                             </select>
                                         </div>
                                     </div>
                                    
                                     <div class="col-md-12">
-                                        <label for="input11" class="form-label">Short Description</label>
+                                        <label for="input11" class="form-label">miêu tả ngắn</label>
                                         <textarea name="short_desc" class="form-control" id="input11" placeholder="Address ..." rows="3">{{ $editData->short_desc }}</textarea>
                                     </div>
 
                                     <div class="col-md-12">
-                                        <label for="input11" class="form-label"> Description</label>
+                                        <label for="input11" class="form-label"> miêu tả</label>
                                         <textarea name="description" class="form-control" id="myeditorinstance"> {!! $editData->description !!} </textarea>
                                     </div>
                                     <div class="row mt-2">
@@ -140,33 +140,33 @@
                                            <div class="basic_facility_section_remove" id="basic_facility_section_remove">
                                               <div class="row add_item">
                                                  <div class="col-md-8">
-                                                    <label for="facility_name" class="form-label"> Room Facilities </label>
+                                                    <label for="facility_name" class="form-label"> Tiện nghi phòng </label>
                                                     <select name="facility_name[]" id="facility_name" class="form-control">
-                                                          <option value="">Select Facility</option>
+                                                          <option value="">Chọn tiện nghi</option>
                                                           <option value="Complimentary Breakfast" {{$item->facility_name == 'Complimentary Breakfast'?'selected':''}}>Complimentary Breakfast</option>
-                                         <option value="32/42 inch LED TV"  {{$item->facility_name == '32/42 inch LED TV'?'selected':''}}> 32/42 inch LED TV</option>
+                                         <option value="Tivi LED 32/42 inch"  {{$item->facility_name == 'Tivi LED 32/42 inch'?'selected':''}}> Tivi LED 32/42 inch</option>
                                        
-                                        <option value="Smoke alarms"  {{$item->facility_name == 'Smoke alarms'?'selected':''}}>Smoke alarms</option>
+                                        <option value="Thiết bị báo khói"  {{$item->facility_name == 'Thiết bị báo khói'?'selected':''}}>Thiết bị báo khói</option>
                                        
-                                        <option value="Minibar" {{$item->facility_name == 'Complimentary Breakfast'?'selected':''}}> Minibar</option>
+                                        <option value="quầy bar nhỏ" {{$item->facility_name == 'Complimentary Breakfast'?'selected':''}}> quầy bar nhỏ</option>
                                        
-                                        <option value="Work Desk"  {{$item->facility_name == 'Work Desk'?'selected':''}}>Work Desk</option>
+                                        <option value="Bàn làm việc"  {{$item->facility_name == 'Bàn làm việc'?'selected':''}}>Bàn làm việc</option>
                                        
-                                        <option value="Free Wi-Fi" {{$item->facility_name == 'Free Wi-Fi'?'selected':''}}>Free Wi-Fi</option>
+                                        <option value="Miễn phí Wi-Fi" {{$item->facility_name == 'Miễn phí Wi-Fi'?'selected':''}}>Miễn phí Wi-Fi</option>
                                        
-                                        <option value="Safety box" {{$item->facility_name == 'Safety box'?'selected':''}} >Safety box</option>
+                                        <option value="Hộp an toàn" {{$item->facility_name == 'Hộp an toàn'?'selected':''}} >Hộp an toàn</option>
                                        
-                                        <option value="Rain Shower" {{$item->facility_name == 'Rain Shower'?'selected':''}} >Rain Shower</option>
+                                        <option value="Tắm mưa" {{$item->facility_name == 'Tắm mưa'?'selected':''}} >Tắm mưa</option>
                                        
-                                        <option value="Slippers" {{$item->facility_name == 'Slippers'?'selected':''}} >Slippers</option>
+                                        <option value="dép đi trong nhà" {{$item->facility_name == 'dép đi trong nhà'?'selected':''}} >dép đi trong nhà</option>
                                        
-                                        <option value="Hair dryer" {{$item->facility_name == 'Hair dryer'?'selected':''}} >Hair dryer</option>
+                                        <option value="máy sấy tóc" {{$item->facility_name == 'máy sấy tóc'?'selected':''}} >máy sấy tóc</option>
                                        
-                                        <option value="Wake-up service"  {{$item->facility_name == 'Wake-up service'?'selected':''}}>Wake-up service</option>
+                                        <option value="Dịch vụ đánh thức"  {{$item->facility_name == 'Dịch vụ đánh thức'?'selected':''}}>Dịch vụ đánh thức</option>
                                        
-                                        <option value="Laundry & Dry Cleaning" {{$item->facility_name == 'Laundry & Dry Cleaning'?'selected':''}} >Laundry & Dry Cleaning</option>
+                                        <option value="Giặt & Giặt khô" {{$item->facility_name == 'Giặt & Giặt khô'?'selected':''}} >Giặt & Giặt khô</option>
                                         
-                                        <option value="Electronic door lock"  {{$item->facility_name == 'Electronic door lock'?'selected':''}}>Electronic door lock</option> 
+                                        <option value="Khóa cửa điện tử"  {{$item->facility_name == 'Khóa cửa điện tử'?'selected':''}}>Khóa cửa điện tử</option> 
                                                     </select>
                                                  </div>
                                                  <div class="col-md-4">
@@ -187,18 +187,18 @@
                                                             <select name="facility_name[]" id="basic_facility_name" class="form-control">
                                         <option value="">Select Facility</option>
                                         <option value="Complimentary Breakfast">Complimentary Breakfast</option>
-                                        <option value="32/42 inch LED TV" > 32/42 inch LED TV</option>
-                                        <option value="Smoke alarms" >Smoke alarms</option>
-                                        <option value="Minibar"> Minibar</option>
-                                        <option value="Work Desk" >Work Desk</option>
-                                        <option value="Free Wi-Fi">Free Wi-Fi</option>
-                                        <option value="Safety box" >Safety box</option>
-                                        <option value="Rain Shower" >Rain Shower</option>
-                                        <option value="Slippers" >Slippers</option>
-                                        <option value="Hair dryer" >Hair dryer</option>
-                                        <option value="Wake-up service" >Wake-up service</option>
-                                        <option value="Laundry & Dry Cleaning" >Laundry & Dry Cleaning</option>
-                                        <option value="Electronic door lock" >Electronic door lock</option> 
+                                        <option value="Tivi LED 32/42 inch" > Tivi LED 32/42 inch</option>
+                                        <option value="Thiết bị báo khói" >Thiết bị báo khói</option>
+                                        <option value="quầy bar nhỏ"> quầy bar nhỏ</option>
+                                        <option value="Bàn làm việc" >Bàn làm việc</option>
+                                        <option value="Miễn phí Wi-Fi">Miễn phí Wi-Fi</option>
+                                        <option value="Hộp an toàn" >Hộp an toàn</option>
+                                        <option value="Tắm mưa" >Tắm mưa</option>
+                                        <option value="dép đi trong nhà" >dép đi trong nhà</option>
+                                        <option value="máy sấy tóc" >máy sấy tóc</option>
+                                        <option value="Dịch vụ đánh thức" >Dịch vụ đánh thức</option>
+                                        <option value="Giặt & Giặt khô" >Giặt & Giặt khô</option>
+                                        <option value="Khóa cửa điện tử" >Khóa cửa điện tử</option> 
                                                             </select>
                                                         </div>
                                                         <div class="col-md-6">
@@ -384,18 +384,18 @@
                    <select name="facility_name[]" id="basic_facility_name" class="form-control">
                          <option value="">Select Facility</option>
   <option value="Complimentary Breakfast">Complimentary Breakfast</option>
-  <option value="32/42 inch LED TV" > 32/42 inch LED TV</option>
-  <option value="Smoke alarms" >Smoke alarms</option>
-  <option value="Minibar"> Minibar</option>
-  <option value="Work Desk" >Work Desk</option>
-  <option value="Free Wi-Fi">Free Wi-Fi</option>
-  <option value="Safety box" >Safety box</option>
-  <option value="Rain Shower" >Rain Shower</option>
-  <option value="Slippers" >Slippers</option>
-  <option value="Hair dryer" >Hair dryer</option>
-  <option value="Wake-up service" >Wake-up service</option>
-  <option value="Laundry & Dry Cleaning" >Laundry & Dry Cleaning</option>
-  <option value="Electronic door lock" >Electronic door lock</option> 
+  <option value="Tivi LED 32/42 inch" > Tivi LED 32/42 inch</option>
+  <option value="Thiết bị báo khói" >Thiết bị báo khói</option>
+  <option value="quầy bar nhỏ"> quầy bar nhỏ</option>
+  <option value="Bàn làm việc" >Bàn làm việc</option>
+  <option value="Miễn phí Wi-Fi">Miễn phí Wi-Fi</option>
+  <option value="Hộp an toàn" >Hộp an toàn</option>
+  <option value="Tắm mưa" >Tắm mưa</option>
+  <option value="dép đi trong nhà" >dép đi trong nhà</option>
+  <option value="máy sấy tóc" >máy sấy tóc</option>
+  <option value="Dịch vụ đánh thức" >Dịch vụ đánh thức</option>
+  <option value="Giặt & Giặt khô" >Giặt & Giặt khô</option>
+  <option value="Khóa cửa điện tử" >Khóa cửa điện tử</option> 
                    </select>
                 </div>
                 <div class="form-group col-md-6" style="padding-top: 20px">

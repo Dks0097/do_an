@@ -15,12 +15,12 @@ class PermissionsSeeder extends Seeder {
     public function run(): void
     {
         $roles = [
-            [ 'name' => 'Quản lý', 'group_name' => 'Management' ],
-            [ 'name' => 'Nhân viên lễ tân', 'group_name' => 'Front Desk' ],
-            [ 'name' => 'Nhân viên phục vụ phòng', 'group_name' => 'Room Service' ],
-            [ 'name' => 'Nhân viên bảo vệ', 'group_name' => 'Security' ],
-            [ 'name' => 'Nhân viên kế toán ', 'group_name' => 'Accounting' ],
-            [ 'name' => 'Nhân viên bảo dưỡng', 'group_name' => 'Maintenance' ],
+            [ 'name' => 'Quản lý', 'guard_name' => 'Admin' ],
+            [ 'name' => 'Nhân viên lễ tân', 'guard_name' => 'Front Desk' ],
+            [ 'name' => 'Nhân viên phục vụ phòng', 'guard_name' => 'Room Service' ],
+            [ 'name' => 'Nhân viên bảo vệ', 'groguard_nameup_name' => 'Security' ],
+            [ 'name' => 'Nhân viên kế toán ', 'guard_name' => 'Accounting' ],
+            [ 'name' => 'Nhân viên bảo dưỡng', 'guard_name' => 'Maintenance' ],
            
         ];
 

@@ -91,7 +91,7 @@
 											</div>
 											<div class="col-12">
 												<div class="text-center ">
-													<p class="mb-0"> Bạn vẫn chưa có tài khoản? <a href="authentication-signup.html"> Đăng kí tại đây</a>
+													<p class="mb-0"> Bạn vẫn chưa có tài khoản? <a href="{{route('register')}}"> Đăng kí tại đây</a>
 													</p>
 												</div>
 											</div>

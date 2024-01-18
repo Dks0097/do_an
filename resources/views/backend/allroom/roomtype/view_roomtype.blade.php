@@ -27,7 +27,7 @@
         </div>
         <div class="ms-auto">
             <div class="btn-group">
-                <a href="{{route('add.room.type')}}" class="btn btn-primary ">Thêm loại phòng</a>
+                <a href="{{route('add.room.type')}}" class="btn btn-primary ">Thêm  phòng</a>
             </div>
         </div>
     </div>

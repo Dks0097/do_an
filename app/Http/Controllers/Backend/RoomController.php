@@ -99,7 +99,7 @@ class RoomController extends Controller
         } // end if
 
         $notification = array(
-            'message' => 'Room Updated Successfully',
+            'message' => 'Phòng được cập nhật thành công',
             'alert-type' => 'success'
         );
 
@@ -118,9 +118,9 @@ class RoomController extends Controller
             //Check if the image exists before deleting(unlinking)
             if (file_exists($imagePath)) {
                 unlink($imagePath);
-                echo "Image deleted successfully";
+                echo "Đã xóa hình ảnh thành công";
             } else {
-                echo "Image does not exisit";
+                echo "Hình ảnh không tồn tại";
             }
 
             //Deelete the record from the database
@@ -129,7 +129,7 @@ class RoomController extends Controller
         }
 
         $notification = array(
-            'message' => 'Mulit Image deleted successfully',
+            'message' => 'Nhiều hình ảnh đã được xóa thành công',
             'alert-type' => 'success',
         );
 
@@ -146,7 +146,7 @@ class RoomController extends Controller
         $data->save();
 
         $notification = array(
-            'message' => 'Room Number added successfully',
+            'message' => 'Số phòng được thêm thành công',
             'alert-type' => 'success',
         );
 
@@ -168,7 +168,7 @@ class RoomController extends Controller
         $data->save();
 
         $notification = array(
-            'message' => 'Room Number Updated Successfully',
+            'message' => 'Số phòng được cập nhật thành công',
             'alert-type'=> 'success',
 
         );
@@ -180,7 +180,7 @@ class RoomController extends Controller
         RoomNumber::find($id)->delete();
 
         $notification = array(
-            'message' => 'Room Number Deleted Successfully',
+            'message' => 'Số phòng được xóa thành công',
             'alert-type'=> 'success',
         );
         
@@ -212,7 +212,7 @@ class RoomController extends Controller
         $room->delete();
 
         $notification = array(
-            'message' => 'Room Deleted Successfully',
+            'message' => 'Đã xóa phòng thành công',
             'alert-type'=> 'success',
         );
         

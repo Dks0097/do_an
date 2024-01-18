@@ -29,8 +29,8 @@
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="javascript:;">
                                 <div class="msg-header">
-                                    <p class="msg-header-title">Notifications</p>
-                                    <p class="msg-header-badge">8 New</p>
+                                    <p class="msg-header-title">thông báo</p>
+                                    <p class="msg-header-badge">8 mới</p>
                                 </div>
                             </a>
                             <div class="header-notifications-list">
@@ -40,9 +40,9 @@
                                             <img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="msg-name">Daisy Anderson<span class="msg-time float-end">5 sec
-                                        ago</span></h6>
-                                            <p class="msg-info">The standard chunk of lorem</p>
+                                            <h6 class="msg-name">Dương<span class="msg-time float-end">5 giây
+                                                trước kia</span></h6>
+                                            <p class="msg-info">Phần tiêu chuẩn của dương</p>
                                         </div>
                                     </div>
                                 </a>
@@ -75,9 +75,9 @@
                                             <img src="assets/images/app/outlook.png" width="25" alt="user avatar">
                                         </div>
                                         <div class="flex-grow-1">
-                                            <h6 class="msg-name">Account Created<span class="msg-time float-end">28 min
+                                            <h6 class="msg-name">Tài khoản đã được tạo<span class="msg-time float-end">28 min
                                         ago</span></h6>
-                                            <p class="msg-info">Successfully created new email</p>
+                                            <p class="msg-info">Đã tạo thành công email mới</p>
                                         </div>
                                     </div>
                                 </a>

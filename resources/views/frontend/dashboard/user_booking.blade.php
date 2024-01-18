@@ -54,7 +54,7 @@
                                 <th scope="col">Ngày đặt</th>
                                 <th scope="col">Người dùng</th>
                                 <th scope="col">Phòng</th>
-                                <th scope="col">Thời gian nhận/trả phòng</th>
+                                <th scope="col">Check in/Check out</th>
                                 <th scope="col">Số phòng</th>
                                 <th scope="col">Trạng thái</th> 
                                 </tr>

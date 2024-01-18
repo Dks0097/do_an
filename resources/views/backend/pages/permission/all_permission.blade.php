@@ -50,7 +50,7 @@
                         <tr>
                             <td>{{ $key+1 }}</td> 
                             <td>{{ $item->name }}</td>
-                            <td>{{ $item->group_name }}</td> 
+                            <td>{{ $item->guard_name }}</td> 
                             <td>
                                 <a href="{{ route('edit.permission',$item->id) }}" class="btn btn-warning px-3 radius-30"> Điều chỉnh</a>
                                 <a href="{{ route('delete.permission',$item->id) }}" class="btn btn-danger px-3 radius-30" id="delete"> Xóa</a>

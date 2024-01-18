@@ -7,7 +7,7 @@
         <div class="inner-title">
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="{{url('/')}}">Home</a>
                 </li>
                 <li><i class='bx bx-chevron-right'></i></li>
                 <li> Check Out</li>
@@ -28,12 +28,12 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="billing-details">
-                        <h3 class="title">Billing Details</h3>
+                        <h3 class="title">Chi tiết thanh toán</h3>
 
                         <div class="row">
         <div class="col-lg-12 col-md-12">
             <div class="form-group">
-                <label>Country <span class="required">*</span></label>
+                <label>Nơi cư trú <span class="required">*</span></label>
                 <div class="select-box">
                     <select name="country" class="form-control">
                         <option value="hanoi">Hà Nội</option>
@@ -51,7 +51,7 @@
 
         <div class="col-lg-6 col-md-6">
             <div class="form-group">
-                <label>  Name <span class="required">*</span></label>
+                <label>  Tên <span class="required">*</span></label>
                 <input type="text" name="name" class="form-control" value="{{ \Auth::user()->name }}">
             </div>
         </div>
@@ -72,14 +72,14 @@
 
         <div class="col-lg-6 col-md-6">
             <div class="form-group">
-                <label>Address <span class="required">*</span></label>
+                <label>Địa chỉ <span class="required">*</span></label>
                 <input type="text" name="address" class="form-control" value="{{ \Auth::user()->address }}">
             </div>
         </div>
 
         <div class="col-lg-6 col-md-6">
             <div class="form-group">
-                <label>State <span class="required">*</span></label>
+                <label>Chi tiết <span class="required">*</span></label>
                 <input type="text" name="state" class="form-control">
                 @if ($errors->has('state'))
                     <div class="text-danger">{{ $errors->first('state') }}</div>
@@ -89,7 +89,7 @@
 
         <div class="col-lg-6 col-md-6">
             <div class="form-group">
-                <label>ZipCode <span class="required">*</span></label>
+                <label>Mã bưu chính <span class="required">*</span></label>
                 <input type="text" name="zip_code" class="form-control">
                 @if ($errors->has('zip_code'))
                     <div class="text-danger">{{ $errors->first('zip_code') }}</div>
@@ -110,14 +110,14 @@
                     <section class="checkout-area pb-70">
                         <div class="card-body">
                               <div class="billing-details">
-                                    <h3 class="title">Booking Summary</h3>
+                                    <h3 class="title">Tóm tắt đặt chỗ</h3>
                                     <hr>
       
     <div style="display: flex">
             <img style="height:100px; width:120px;object-fit: cover" src="{{ (!empty($room->image))? url('upload/roomimg/'.$room->image):url('upload/no_image.jpg') }}" alt="Images" alt="Images">
             <div style="padding-left: 10px;">
                 <a href=" " style="font-size: 20px; color: #595959;font-weight: bold">{{ @$room->type->name }}</a>
-                <p><b>{{ $room->price }} / Night</b></p>
+                <p><b>{{ $room->price }} / Đêm</b></p>
             </div>
 
     </div>
@@ -131,23 +131,23 @@
         @endphp
             
             <tr>
-                <td><p>Total Night <br> <b> ( {{ $book_data['check_in'] }} - {{ $book_data['check_out'] }})</b></p></td>
-                <td style="text-align: right"><p> {{ $nights }} Days</p></td>
+                <td><p>Tổng số đêm <br> <b> ( {{ $book_data['check_in'] }} - {{ $book_data['check_out'] }})</b></p></td>
+                <td style="text-align: right"><p> {{ $nights }} Ngày</p></td>
             </tr>
             <tr>
-                <td><p>Total Room</p></td>
+                <td><p>Tổng số phòng</p></td>
                 <td style="text-align: right"><p>{{ $book_data['number_of_rooms'] }}</p></td>
             </tr>
             <tr>
-                <td><p>Subtotal</p></td>
+                <td><p>Tổng</p></td>
                 <td style="text-align: right"><p>${{ $subtotal }}</p></td>
             </tr>
             <tr>
-                <td><p>Discount</p></td>
+                <td><p>Giảm giá</p></td>
                 <td style="text-align:right"> <p>${{ $discount }}</p></td>
             </tr>
             <tr>
-                <td><p>Total</p></td>
+                <td><p>tổng sau khi chiết khấu</p></td>
                 <td style="text-align:right"> <p>${{ $subtotal-$discount }}</p></td>
             </tr>
     </table>
@@ -165,39 +165,39 @@
                             
             <p>
    <input type="radio" id="cash-on-delivery" name="payment_method" value="COD">
-                <label for="cash-on-delivery">Cash On Delivery</label>
+                <label for="cash-on-delivery">Tiền mặt</label>
             </p>
            
            
               <p>
                 <input type="radio" class="pay_method" id="stripe" name="payment_method" value="Stripe">
-                 <label for="stripe">Stripe</label>
+                 <label for="stripe">Dùng ngân hàng</label>
                    </p>
          
           <div id="stripe_pay" class="d-none">
                  <br>
                  <div class="form-row row">
                        <div class="col-xs-12 form-group required">
-                             <label class="control-label">Name on Card</label>
+                             <label class="control-label">Tên thẻ ngân hàng</label>
                              <input class="form-control" size="4" type="text" />
                        </div>
                  </div>
                  <div class="form-row row">
                        <div class="col-xs-12 form-group  required">
-                             <label class="control-label">Card Number</label>
+                             <label class="control-label">Số thẻ</label>
                              <input autocomplete="off" class="form-control card-number" size="20" type="text" />
                        </div>
                  </div>
                  <div class="form-row row">
                        <div class="col-xs-12 col-md-4 form-group cvc required"><label class="control-label">CVC</label>
-                        <input autocomplete="off" class="form-control card-cvc" placeholder="ex. 311" size="4" type="text" /></div>
-                       <div class="col-xs-12 col-md-4 form-group expiration required"><label class="control-label">Expiration Month</label>
+                        <input autocomplete="off" class="form-control card-cvc" placeholder="ví dụ. 311" size="4" type="text" /></div>
+                       <div class="col-xs-12 col-md-4 form-group expiration required"><label class="control-label">Tháng hết hạn</label>
                         <input class="form-control card-expiry-month" placeholder="MM" size="2" type="text" /></div>
-                       <div class="col-xs-12 col-md-4 form-group expiration required"><label class="control-label">Expiration Year</label>
+                       <div class="col-xs-12 col-md-4 form-group expiration required"><label class="control-label">Năm hết hạn</label>
                         <input class="form-control card-expiry-year" placeholder="YYYY" size="4" type="text" /></div>
                  </div>
                  <div class="form-row row">
-                       <div class="col-md-12 error form-group hide"><div class="alert-danger alert">Please correct the errors and try again.</div></div>
+                       <div class="col-md-12 error form-group hide"><div class="alert-danger alert">Đặt phòng.</div></div>
                  </div>
            </div>
          

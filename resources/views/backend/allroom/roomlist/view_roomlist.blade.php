@@ -38,7 +38,7 @@
                             <th>In/Out Ngày</th>
                             <th>Số đặt phòng</th>
                             <th>Khách hàng</th>
-                            <th>Hoạt động</th>
+                            <th>Tình trạng</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,16 +46,16 @@
                         <tr>
                             <td>{{ $key+1 }}</td>
                             <td> {{ $item->name }}  </td>
-                            <td>{{ $item->room_no }}</td>
+                            <td>{{ $item->room_no }} </td>
                             <td>
                             @if ($item->booking_id != '')
                                 @if ($item->booking_stauts == 1)
-                                <span class="badge bg-danger">Booked</span>
+                                <span class="badge bg-danger">đã đặt</span>
                                  @else   
-                                 <span class="badge bg-warning">Pending</span>
+                                 <span class="badge bg-warning">chờ phê duyệt</span>
                                 @endif 
                                 @else
-                                <span class="badge bg-success">Available</span>
+                                <span class="badge bg-success">có sẵn</span>
                             @endif    
                             </td>
 
@@ -85,9 +85,9 @@
 
                               <td>
                                 @if ($item->status == 'Active')
-                                <span class="badge bg-success">Published</span>
+                                <span class="badge bg-success">Hoạt động</span>
                                   @else
-                                  <span class="badge bg-danger">InActive</span>
+                                  <span class="badge bg-danger">không hoạt động</span>
                                 @endif
                               </td> 
 

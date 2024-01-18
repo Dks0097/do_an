@@ -33,7 +33,7 @@
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="javascript:;">
                                 <div class="msg-header">
-                                    <p class="msg-header-title">Notifications</p>
+                                    <p class="msg-header-title">Thông báo</p>
                                     <p class="msg-header-badge"> </p>
                                 </div>
                             </a>
@@ -52,7 +52,7 @@
                                      </div>
                                      <div class="flex-grow-1">
                                          <h6 class="msg-name">{{ $notification->data['message'] }}<span class="msg-time float-end"> {{ Carbon\Carbon::parse($notification->created_at)->diffForHumans() }} </span></h6>
-                                         <p class="msg-info">New Booking </p>
+                                         <p class="msg-info">Đặt phòng mới</p>
                                      </div>
                                  </div>
                              </a>
@@ -62,7 +62,7 @@
                             </div>
                             <a href="javascript:;">
                                 <div class="text-center msg-footer">
-                                    <button class="btn btn-primary w-100">View All Notifications</button>
+                                    <button class="btn btn-primary w-100">Xem tất cả thông báo</button>
                                 </div>
                             </a>
                         </div>

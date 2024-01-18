@@ -4,9 +4,9 @@
             <img src="{{asset('backend/assets/images/logo-icon.png')}}" class="logo-icon" alt="logo icon">
         </div>
         <div>
-            <h4 class="logo-text">H.O.K Admin</h4>
+            <h4 class="logo-text"><a href="{{route('admin.dashboard')}}"> H.O.K Admin</a></h4>
         </div>
-        <div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
+        <div class="toggle-icon ms-auto"><a href="{{route('admin.dashboard')}}"><i class='bx bx-arrow-back'></a></i>
         </div>
      </div>
     <!--navigation-->

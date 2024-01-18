@@ -23,7 +23,7 @@ class CommentController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Comment Added Successfully Admin will approved',
+            'message' => 'Đã thêm bình luận thành công Quản trị viên sẽ phê duyệt',
             'alert-type' => 'success'
         );
 
@@ -48,7 +48,7 @@ class CommentController extends Controller
            $comment->save(); 
         }
 
-        return response()->json(['message' => 'Comment Status Updated Successfully']);
+        return response()->json(['message' => 'Trạng thái bình luận được cập nhật thành công']);
 
     }// End Method 
 }

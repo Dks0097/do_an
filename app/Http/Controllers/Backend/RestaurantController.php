@@ -34,7 +34,7 @@ class RestaurantController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'BlogCategory Added Successfully',
+            'message' => 'Danh mục Blog được thêm thành công',
             'alert-type' => 'success'
         );
 
@@ -64,7 +64,7 @@ class RestaurantController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'BlogCategory Updated Successfully',
+            'message' => 'Danh mục Blog được cập nhật thành công',
             'alert-type' => 'success'
         );
 
@@ -78,7 +78,7 @@ class RestaurantController extends Controller
         ResCategory::find($id)->delete();
 
         $notification = array(
-            'message' => 'BlogCategory Deleted Successfully',
+            'message' => 'Danh mục Blog được xóa thành công',
             'alert-type' => 'success'
         );
 
@@ -120,7 +120,7 @@ class RestaurantController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'BlogPost Data Inserted Successfully',
+            'message' => 'Dữ liệu BlogPost đã được chèn thành công',
             'alert-type' => 'success'
         );
 
@@ -161,7 +161,7 @@ class RestaurantController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'BlogPost Updated With Image Successfully',
+                'message' => 'BlogPost Đã cập nhật hình ảnh thành công',
                 'alert-type' => 'success'
             );
 
@@ -182,7 +182,7 @@ class RestaurantController extends Controller
                 ]);
 
                 $notification = array(
-                    'message' => 'BlogPost Updated Without Image Successfully',
+                    'message' => 'Bài đăng trên blog được cập nhật không có hình ảnh thành công',
                     'alert-type' => 'success'
                 );
 
@@ -202,7 +202,7 @@ class RestaurantController extends Controller
         ResProducts::findOrFail($id)->delete();
 
         $notification = array(
-            'message' => 'BlogPost Deleted Successfully',
+            'message' => 'Đã xóa bài đăng trên blog thành công',
             'alert-type' => 'success'
         );
 

@@ -137,7 +137,7 @@ class RoomListController extends Controller
  
 
         $notification = array(
-            'message' => 'Booking Added Successfully',
+            'message' => 'Đã thêm đặt phòng thành công',
             'alert-type' => 'success'
         ); 
         return redirect()->back()->with($notification);  
@@ -151,7 +151,7 @@ class RoomListController extends Controller
     $item->delete();
 
     $notification = array(
-        'message' => 'Booking deleted successfully',
+        'message' => 'đặt phòng đã được xóa thành công',
         'alert-type' => 'success'
     );
 

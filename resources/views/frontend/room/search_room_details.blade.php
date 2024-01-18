@@ -26,7 +26,7 @@
             <div class="col-lg-4">
                 <div class="room-details-side">
                     <div class="side-bar-form">
-                        <h3>Booking Sheet </h3>
+                        <h3>Phiếu đặt phòng </h3>
 
 <form action="{{ route('user_booking_store',$roomdetails->id) }}" method="post" id="bk_form">
     @csrf
@@ -59,7 +59,7 @@
 
         <div class="col-lg-12">
             <div class="form-group">
-                <label>Numbers of Persons</label>
+                <label>Số người</label>
                 <select class="form-control" name="persion" id="nmbr_person">
                 @for ($i = 1; $i <= 4; $i++) 
       <option {{ old('persion') == $i ? 'selected' : '' }} value="0{{ $i }}" >0{{ $i }} </option>
@@ -74,7 +74,7 @@
 
         <div class="col-lg-12">
             <div class="form-group">
-                <label>Numbers of Rooms</label>
+                <label>Số phòng</label>
                 <select class="form-control number_of_rooms" name="number_of_rooms" id="select_room">
                     @for ($i = 1; $i <= 5; $i++)  
                     <option value="0{{ $i }}">0{{ $i }}</option>
@@ -92,17 +92,17 @@
                 
     <tbody>
         <tr> 
-        <td><p> SubTotal</p></td>
+        <td><p> Giá gốc</p></td>
         <td style="text-align: right" ><span class="t_subtotal">0</span> </td> 
         </tr>
 
         <tr> 
-        <td><p> Discount</p></td>
+        <td><p> Giảm giá</p></td>
         <td style="text-align: right" ><span class="t_discount">0</span></td> 
         </tr>
 
         <tr> 
-        <td><p> Total</p></td>
+        <td><p> Tổng </p></td>
         <td style="text-align: right" ><span class="t_g_total">0</span></td> 
         </tr>
         
@@ -150,7 +150,7 @@
                         <ul>
                             
                             <li>
-                               <b> Basic : ${{ $roomdetails->price }}/Night/Room</b>
+                               <b> Giá : ${{ $roomdetails->price }}/đêm/phòng</b>
                             </li> 
                          
                         </ul>
@@ -165,7 +165,7 @@
 
 
 <div class="side-bar-plan">
-                        <h3>Basic Plan Facilities</h3>
+                        <h3>Cơ sở vật chất của gói cơ bản</h3>
                         <ul>
                             @foreach ($facility as $fac) 
                             <li><a href="#">{{ $fac->facility_name }}</a></li>
@@ -187,14 +187,14 @@
 
 
 <div class="services-bar-widget">
-                        <h3 class="title">Room Details </h3>
+                        <h3 class="title">Chi tiết phòng </h3>
 <div class="side-bar-list">
     <ul>
        <li>
-            <a href="#"> <b>Capacity : </b> {{ $roomdetails->room_capacity }} Person <i class='bx bxs-cloud-download'></i></a>
+            <a href="#"> <b>Chứa khoảng : </b> {{ $roomdetails->room_capacity }} người <i class='bx bxs-cloud-download'></i></a>
         </li>
         <li>
-             <a href="#"> <b>Size : </b> {{ $roomdetails->size }}ft2 <i class='bx bxs-cloud-download'></i></a>
+             <a href="#"> <b>Rộng : </b> {{ $roomdetails->size }}ft2 <i class='bx bxs-cloud-download'></i></a>
         </li>
        
        
@@ -211,14 +211,14 @@
 
 <div class="col-lg-6">
 <div class="services-bar-widget">
-<h3 class="title">Room Details </h3>
+<h3 class="title">Chi tiết phòng </h3>
 <div class="side-bar-list">
     <ul>
        <li>
             <a href="#"> <b>View : </b> {{ $roomdetails->view }} <i class='bx bxs-cloud-download'></i></a>
         </li>
         <li>
-             <a href="#"> <b>Bad Style : </b> {{ $roomdetails->bed_style }} <i class='bx bxs-cloud-download'></i></a>
+             <a href="#"> <b>Kiểu giường : </b> {{ $roomdetails->bed_style }} <i class='bx bxs-cloud-download'></i></a>
         </li>
          
     </ul>
@@ -233,9 +233,9 @@
                     </div>
 
                     <div class="room-details-review">
-                        <h2>Clients Review and Retting's</h2>
+                        <h2>Đánh giá của khách hàng và Retting's</h2>
                         <div class="review-ratting">
-                            <h3>Your retting: </h3>
+                            <h3>đánh giá của bạn: </h3>
                             <i class='bx bx-star'></i>
                             <i class='bx bx-star'></i>
                             <i class='bx bx-star'></i>
@@ -246,13 +246,13 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control"  cols="30" rows="8" required data-error="Write your message" placeholder="Write your review here.... "></textarea>
+                                        <textarea name="message" class="form-control"  cols="30" rows="8" required data-error="Write your message" placeholder="Viết nhận xét của bạn ở đây.... "></textarea>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12">
                                     <button type="submit" class="default-btn btn-bg-three">
-                                        Submit Review
+                                        Gửi đánh giá
                                     </button>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@
 <div class="room-details-other pb-70">
     <div class="container">
         <div class="room-details-text">
-            <h2>Other Rooms </h2>
+            <h2>Các phòng khác </h2>
         </div>
 
         <div class="row ">
@@ -291,7 +291,7 @@
                                  <h3>
              <a href="{{ url('room/details/'.$item->id) }}">{{ $item['type']['name'] }}</a>
                                 </h3>
-                                <span>{{ $item->price }} / Per Night </span>
+                                <span>{{ $item->price }} / đêm </span>
                                 <div class="rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -301,7 +301,7 @@
                                 </div>
                                 <p>{{ $item->short_desc }}</p>
                                 <ul>
-                   <li><i class='bx bx-user'></i> {{ $item->room_capacity }} Person</li>
+                   <li><i class='bx bx-user'></i> {{ $item->room_capacity }} người</li>
                    <li><i class='bx bx-expand'></i> {{ $item->size }}ft2</li>
                                 </ul>
 
@@ -310,7 +310,7 @@
         <li><i class='bx bxs-hotel'></i> {{ $item->bed_style }}</li>
                                 </ul>
                                 
-                                <a href="room-details.html" class="book-more-btn">
+                                <a href="{{url('/rooms/details/'.$item->id)}}" class="book-more-btn">
                                     Book Now
                                 </a>
                             </div>

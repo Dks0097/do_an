@@ -41,7 +41,7 @@
 
     <div class="col-md-6">
         <label for="input1" class="form-label">Nhóm quyền</label>
-        <select name="group_name" class="form-select mb-3" aria-label="Default select example">
+        <select name="guard_name" class="form-select mb-3" aria-label="Default select example">
             <option selected="">Chọn nhóm </option>
             <option value="Team">Thành viên </option>
             <option value="Book Area">Khu vực đặt</option>

@@ -41,21 +41,21 @@
 
     <div class="col-md-6">
         <label for="input1" class="form-label">Permission Group </label>
-        <select name="group_name" class="form-select mb-3" aria-label="Default select example">
+        <select name="guard_name" class="form-select mb-3" aria-label="Default select example">
             <option selected="">Select Group </option>
-            <option value="Team" {{ $permission->group_name == 'Team' ? 'selected' : '' }}>Team </option>
-            <option value="Book Area" {{ $permission->group_name == 'Book Area' ? 'selected' : '' }}>Book Area</option>
-            <option value="Manage Room" {{ $permission->group_name == 'Manage Room' ? 'selected' : '' }}>Manage Room</option>
-            <option value="Booking" {{ $permission->group_name == 'Booking' ? 'selected' : '' }}>Booking</option>
-            <option value="RoomList" {{ $permission->group_name == 'RoomList' ? 'selected' : '' }}>RoomList</option>
-            <option value="Setting" {{ $permission->group_name == 'Setting' ? 'selected' : '' }}>Setting</option>
-            <option value="Tesimonial" {{ $permission->group_name == 'Tesimonial' ? 'selected' : '' }}>Tesimonial</option>
-            <option value="Blog" {{ $permission->group_name == 'Blog' ? 'selected' : '' }}>Blog</option>
-            <option value="Manage Comment" {{ $permission->group_name == 'Manage Comment' ? 'selected' : '' }}>Manage Comment</option>
-            <option value="Booking Report" {{ $permission->group_name == 'Booking Report' ? 'selected' : '' }}>Booking Report </option>
-            <option value="Hotel Gallery" {{ $permission->group_name == 'Hotel Gallery' ? 'selected' : '' }}>Hotel Gallery </option>
-            <option value="Contact Message" {{ $permission->group_name == 'Contact Message' ? 'selected' : '' }}>Contact Message </option>
-            <option value="Role and Permission" {{ $permission->group_name == 'Role and Permission' ? 'selected' : '' }}>Role and Permission </option>
+            <option value="Team" {{ $permission->guard_name == 'Team' ? 'selected' : '' }}>Team </option>
+            <option value="Book Area" {{ $permission->guard_name == 'Book Area' ? 'selected' : '' }}>Book Area</option>
+            <option value="Manage Room" {{ $permission->guard_name == 'Manage Room' ? 'selected' : '' }}>Manage Room</option>
+            <option value="Booking" {{ $permission->guard_name == 'Booking' ? 'selected' : '' }}>Booking</option>
+            <option value="RoomList" {{ $permission->guard_name == 'RoomList' ? 'selected' : '' }}>RoomList</option>
+            <option value="Setting" {{ $permission->guard_name == 'Setting' ? 'selected' : '' }}>Setting</option>
+            <option value="Tesimonial" {{ $permission->guard_name == 'Tesimonial' ? 'selected' : '' }}>Tesimonial</option>
+            <option value="Blog" {{ $permission->guard_name == 'Blog' ? 'selected' : '' }}>Blog</option>
+            <option value="Manage Comment" {{ $permission->guard_name == 'Manage Comment' ? 'selected' : '' }}>Manage Comment</option>
+            <option value="Booking Report" {{ $permission->guard_name == 'Booking Report' ? 'selected' : '' }}>Booking Report </option>
+            <option value="Hotel Gallery" {{ $permission->guard_name == 'Hotel Gallery' ? 'selected' : '' }}>Hotel Gallery </option>
+            <option value="Contact Message" {{ $permission->guard_name == 'Contact Message' ? 'selected' : '' }}>Contact Message </option>
+            <option value="Role and Permission" {{ $permission->guard_name == 'Role and Permission' ? 'selected' : '' }}>Role and Permission </option>
         </select>
 
     </div>

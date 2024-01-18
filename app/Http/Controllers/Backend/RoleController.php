@@ -30,11 +30,11 @@ class RoleController extends Controller
 
         $permissions = Permission::create([
             'name' => $request->name,
-            'group_name' => $request->group_name,
+            'guard_name' => $request->guard_name,
         ]);
 
         $notification = array(
-            'message' => 'Permission Created Successfully',
+            'message' => 'Quyền được tạo thành công',
             'alert-type' => 'success'
         );
 
@@ -55,11 +55,11 @@ class RoleController extends Controller
 
         Permission::find($per_id)->update([
             'name' => $request->name,
-            'group_name' => $request->group_name,
+            'guard_name' => $request->guard_name,
         ]);
 
         $notification = array(
-            'message' => 'Permission Updated Successfully',
+            'message' => 'Quyền được cập nhật thành công',
             'alert-type' => 'success'
         );
 
@@ -73,7 +73,7 @@ class RoleController extends Controller
         Permission::find($id)->delete();
 
         $notification = array(
-            'message' => 'Permission Deleted Successfully',
+            'message' => 'Quyền được xóa thành công',
             'alert-type' => 'success'
         );
 
@@ -98,7 +98,7 @@ class RoleController extends Controller
         Excel::import(new PermissionImport, $request->file('import_file'));
 
         $notification = array(
-            'message' => 'Permission Imported Successfully',
+            'message' => 'Đã nhập quyền thành công',
             'alert-type' => 'success'
         );
 
@@ -121,13 +121,14 @@ class RoleController extends Controller
     }// End Method
 
     public function StoreRoles(Request $request){
-
+        
         Role::create([
             'name' => $request->name,
+            'guard_name'=> $request->guard_name,
         ]);
 
         $notification = array(
-            'message' => 'Role Created Successfully',
+            'message' => 'Vai trò được tạo thành công',
             'alert-type' => 'success'
         );
 
@@ -149,10 +150,11 @@ class RoleController extends Controller
 
         Role::find($role_id)->update([
             'name' => $request->name,
+            'guard_name'=> $request->guard_name,
         ]);
 
         $notification = array(
-            'message' => 'Role Updated Successfully',
+            'message' => 'Vai trò được cập nhật thành công',
             'alert-type' => 'success'
         );
 
@@ -165,11 +167,11 @@ class RoleController extends Controller
         Role::find($id)->delete();
 
         $notification = array(
-            'message' => 'Role Deleted Successfully',
+            'message' => 'Đã xóa vai trò thành công',
             'alert-type' => 'success'
         );
 
-        return redirect()->back()->with($notification);   
+        return redirect()->route('all.roles')->with($notification);   
 
     }// End Method
     public function AddRolesPermission(){
@@ -193,7 +195,7 @@ class RoleController extends Controller
         } // end foreach
 
         $notification = array(
-            'message' => 'Role Permission Added Successfully',
+            'message' => 'Đã thêm quyền vai trò thành công',
             'alert-type' => 'success'
         );
 
@@ -228,7 +230,7 @@ class RoleController extends Controller
         }
 
         $notification = array(
-            'message' => 'Role Permission Updated Successfully',
+            'message' => 'Đã cập nhật quyền vai trò thành công',
             'alert-type' => 'success'
         );
 
@@ -244,7 +246,7 @@ class RoleController extends Controller
         }
 
         $notification = array(
-            'message' => 'Role Permission Deleted Successfully',
+            'message' => 'Đã xóa quyền vai trò thành công',
             'alert-type' => 'success'
         );
 

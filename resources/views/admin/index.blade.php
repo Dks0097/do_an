@@ -117,13 +117,13 @@
                   <thead>
                       <tr>
                           <th>Sl</th>
-                          <th>B No</th>
-                          <th>B Date</th>
-                          <th>Customer</th>
-                          <th>Room</th>
+                          <th>mã hóa đơn</th>
+                          <th>Ngày đặt</th>
+                          <th>Người dùng</th>
+                          <th>Phòng</th>
                           <th>Check IN/Out</th>
-                          <th>Total Room</th>
-                          <th>Guest</th> 
+                          <th>Số phòng</th>
+                          <th>Khách</th> 
                       </tr>
                   </thead>
                   <tbody>
@@ -167,7 +167,7 @@
       data: {
           labels: labels,
           datasets: [{
-              label: 'Booking Data',
+              label: 'Dữ liệu đặt phòng',
               data: data,
               backgroundColor: 'rgba(75, 192, 192, 0.2)',
               borderColor: 'rgba(75, 192, 192, 1)',

@@ -38,6 +38,11 @@
         <input type="text" name="name" class="form-control"   >
 
     </div> 
+	<div class="col-md-6">
+        <label for="input1" class="form-label">Tên nhóm </label>
+        <input type="text" name="guard_name" class="form-control"   >
+
+    </div> 
 
 
                     <div class="col-md-12">

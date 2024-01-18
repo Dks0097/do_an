@@ -34,8 +34,13 @@
         <input type="hidden" name="id" value="{{ $roles->id }}">  
 
     <div class="col-md-6">
-        <label for="input1" class="form-label">Roles Name </label>
+        <label for="input1" class="form-label">Tên vai trò </label>
         <input type="text" name="name" class="form-control" value="{{ $roles->name }}"   >
+
+    </div> 
+	<div class="col-md-6">
+        <label for="input1" class="form-label">Tên nhóm </label>
+        <input type="text" name="guard_name" class="form-control" value="{{ $roles->guard_name }}"  >
 
     </div> 
 

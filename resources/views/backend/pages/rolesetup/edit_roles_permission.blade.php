@@ -56,13 +56,13 @@
         <div class="row"> 
             <div class="col-3">
      @php
-      $permissions = App\Models\User::getpermissionByGroupName($group->group_name)
+      $permissions = App\Models\User::getpermissionByGroupName($group->guard_name)
      @endphp
 
                 <div class="form-check">
       <input class="form-check-input" type="checkbox"  id="CheckDefault" {{ App\Models\User::roleHasPermissions($role,$permissions) ? 'checked' : '' }}>
 
-      <label class="form-check-label" for="CheckDefault"> {{ $group->group_name }} </label>
+      <label class="form-check-label" for="CheckDefault"> {{ $group->guard_name }} </label>
                 </div>
 
             </div>

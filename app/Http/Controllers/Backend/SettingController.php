@@ -32,7 +32,7 @@ class SettingController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Smtp Setting Updated Successfully',
+            'message' => 'Đã cập nhật cài đặt Smtp thành công',
             'alert-type' => 'success'
         );
 
@@ -69,7 +69,7 @@ class SettingController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Site Setting Updated Successfully',
+                'message' => 'Đã cập nhật cài đặt trang web thành công',
                 'alert-type' => 'success'
             );
 
@@ -89,7 +89,7 @@ class SettingController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Site Setting Updated Successfully',
+                'message' => 'Đã cập nhật cài đặt trang web thành công',
                 'alert-type' => 'success'
             );
 

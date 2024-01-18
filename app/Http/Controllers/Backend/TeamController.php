@@ -45,7 +45,7 @@ class TeamController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Team Data Inserted Successfully',
+            'message' => 'Dữ liệu nhóm đã được chèn thành công',
             'alert-type' => 'success'
         );
 
@@ -85,7 +85,7 @@ class TeamController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Team Updated With Image Successfully',
+                'message' => 'Nhóm đã cập nhật hình ảnh thành công',
                 'alert-type' => 'success'
             );
 
@@ -106,7 +106,7 @@ class TeamController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Team Updated Without Image Successfully',
+                'message' => 'Nhóm đã cập nhật không có hình ảnh thành công',
                 'alert-type' => 'success'
             );
 
@@ -125,7 +125,7 @@ class TeamController extends Controller
 
         Team::findOrFail($id)->delete();
         $notification = array(
-            'message' => 'Team member deleted Successfully',
+            'message' => 'Thành viên nhóm đã được xóa thành công',
             'alert-type' => 'success'
         );
 
@@ -167,7 +167,7 @@ class TeamController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Book Area Updated With Image Successfully',
+                'message' => 'Khu vực sách được cập nhật bằng hình ảnh thành công',
                 'alert-type' => 'success'
             );
 
@@ -186,7 +186,7 @@ class TeamController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'BookArea Updated Without Image Successfully',
+                'message' => 'Khu vực sách được cập nhật không có hình ảnh thành công',
                 'alert-type' => 'success'
             );
 

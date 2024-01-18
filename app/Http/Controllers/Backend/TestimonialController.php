@@ -39,7 +39,7 @@ class TestimonialController extends Controller
         ]);
 
         $notification = array(
-            'message' => 'Testimonial Data Inserted Successfully',
+            'message' => 'Dữ liệu chứng thực được chèn thành công',
             'alert-type' => 'success'
         );
 
@@ -76,7 +76,7 @@ class TestimonialController extends Controller
             ]);
 
             $notification = array(
-                'message' => 'Testimonial Updated With Image Successfully',
+                'message' => 'Lời chứng thực được cập nhật bằng hình ảnh thành công',
                 'alert-type' => 'success'
             );
 
@@ -94,7 +94,7 @@ class TestimonialController extends Controller
                 ]);
 
                 $notification = array(
-                    'message' => 'Testimonial Updated Without Image Successfully',
+                    'message' => 'Lời chứng thực được cập nhật không có hình ảnh thành công',
                     'alert-type' => 'success'
                 );
 
@@ -115,7 +115,7 @@ class TestimonialController extends Controller
         Testimonial::findOrFail($id)->delete();
 
         $notification = array(
-            'message' => 'Testimonial Deleted Successfully',
+            'message' => 'Lời chứng thực đã được xóa thành công',
             'alert-type' => 'success'
         );
 

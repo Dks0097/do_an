@@ -35,7 +35,7 @@ class AuthenticatedSessionController extends Controller
         $username = $profileData->name;
 
         $notification = array(
-            'message' => $username.' Login Successfully',
+            'message' => $username.' Đăng nhập thành công',
             'alert-type' => 'info',
          );
 

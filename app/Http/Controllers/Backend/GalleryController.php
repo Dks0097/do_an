@@ -40,7 +40,7 @@ class GalleryController extends Controller
         } //  end foreach 
 
         $notification = array(
-            'message' => 'Gallery Inserted Successfully',
+            'message' => 'Đã chèn thư viện thành công',
             'alert-type' => 'success'
         );
 
@@ -69,7 +69,7 @@ class GalleryController extends Controller
         ]); 
 
         $notification = array(
-            'message' => 'Gallery Updated Successfully',
+            'message' => 'Thư viện được cập nhật thành công',
             'alert-type' => 'success'
         );
 
@@ -86,7 +86,7 @@ class GalleryController extends Controller
         Gallery::findOrFail($id)->delete();
 
         $notification = array(
-            'message' => 'Gallery Image Deleted Successfully',
+            'message' => 'Thư viện được xóa thành công',
             'alert-type' => 'success'
         );
 
@@ -107,7 +107,7 @@ class GalleryController extends Controller
         }
 
         $notification = array(
-            'message' => 'Selected Image Deleted Successfully',
+            'message' => 'Đã xóa hình ảnh đã chọn thành công',
             'alert-type' => 'success'
         );
 

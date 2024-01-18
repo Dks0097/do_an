@@ -63,14 +63,14 @@
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault"> {{ $group->group_name }} </label>
+                    <label class="form-check-label" for="flexCheckDefault"> {{ $group->guard_name }} </label>
                 </div>
 
             </div>
 
             <div class="col-9">
                 @php
-                     $permissions = App\Models\User::getpermissionByGroupName($group->group_name)
+                     $permissions = App\Models\User::getpermissionByGroupName($group->guard_name)
                 @endphp
                 @foreach ($permissions as $permission) 
 

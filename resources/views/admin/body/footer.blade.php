@@ -1,3 +1,3 @@
 <footer class="page-footer">
-    <p class="mb-0">Copyright © 2023. All right reserved.</p>
+    <p class="mb-0">Bản quyền © 2024. Bảo lưu mọi quyền.</p>
 </footer>

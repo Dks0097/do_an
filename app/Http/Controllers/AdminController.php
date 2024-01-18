@@ -62,7 +62,7 @@ class AdminController extends Controller
         $data->save();
 
         $notification = array(
-            'message' => 'Admin Profile Updated Successfully',
+            'message' => 'Hồ sơ quản trị viên được cập nhật thành công',
             'alert-type' => 'success'
         );
 
@@ -104,7 +104,7 @@ class AdminController extends Controller
         ]);
         
         $notification = array(
-            'message' => 'Password Change Successfully',
+            'message' => 'Đổi mật khẩu thành công',
             'alert-type' => 'success'
         );
 
@@ -146,7 +146,7 @@ class AdminController extends Controller
         }
 
         $notification = array(
-            'message' => 'Admin User Created Successfully',
+            'message' => 'Người dùng quản trị được tạo thành công',
             'alert-type' => 'success'
         );
 
@@ -180,7 +180,7 @@ class AdminController extends Controller
         }
 
         $notification = array(
-            'message' => 'Admin User Updated Successfully',
+            'message' => 'Người dùng quản trị được cập nhật thành công',
             'alert-type' => 'success'
         );
 
@@ -197,7 +197,7 @@ class AdminController extends Controller
         }
 
         $notification = array(
-            'message' => 'Admin User Delete Successfully',
+            'message' => 'Người dùng quản trị được xóa thành công',
             'alert-type' => 'success'
         );
 

@@ -186,7 +186,7 @@ class BookingController extends Controller
     Session::forget('book_date');
 
     $notification = array(
-        'message' => 'Booking Added Successfully',
+        'message' => 'Đã thêm đặt chỗ thành công',
         'alert-type' => 'success'
     ); 
     Notification::send($user, new BookingComplete($request->name));
@@ -231,7 +231,7 @@ class BookingController extends Controller
         /// End Sent Email 
 
         $notification = array(
-            'message' => 'Information Updated Successfully',
+            'message' => 'Thông tin được cập nhật thành công',
             'alert-type' => 'success'
         ); 
         return redirect()->back()->with($notification);  
@@ -272,7 +272,7 @@ class BookingController extends Controller
         }
 
         $notification = array(
-            'message' => 'Booking Updated Successfully',
+            'message' => 'Cập nhật đặt chỗ thành công',
             'alert-type' => 'success'
         ); 
         return redirect()->back()->with($notification);   
@@ -312,7 +312,7 @@ class BookingController extends Controller
             $assign_data->save();
  
             $notification = array(
-             'message' => 'Room Assign Successfully',
+             'message' => 'Giao phòng thành công',
              'alert-type' => 'success'
          ); 
          return redirect()->back()->with($notification);   
@@ -335,7 +335,7 @@ class BookingController extends Controller
         $assign_room->delete();
 
         $notification = array(
-            'message' => 'Assign Room Deleted Successfully',
+            'message' => 'Chỉ định phòng Đã xóa thành công',
             'alert-type' => 'success'
         ); 
         return redirect()->back()->with($notification); 
