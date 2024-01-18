@@ -5,13 +5,13 @@
 <div class="page-content">
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Add Post</div>
+					<div class="breadcrumb-title pe-3">Thêm món ăn</div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
-								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								<li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}"><i class="bx bx-home-alt"></i></a>
 								</li>
-								<li class="breadcrumb-item active" aria-current="page">Add Post</li>
+								<li class="breadcrumb-item active" aria-current="page">Thêm món ăn</li>
 							</ol>
 						</nav>
 					</div>
@@ -31,9 +31,9 @@
                 <form  class="row g-3" action="{{ route('store.res.product') }}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="col-md-6">
-                        <label for="input7" class="form-label">Blog Category</label>
+                        <label for="input7" class="form-label">Danh mục món ăn</label>
                         <select name="rescat_id" id="input7" class="form-select">
-                            <option selected="">Select Category </option>
+                            <option selected="">Chọn danh mục </option>
                             @foreach ( $blogcat as $cat) 
                             <option value="{{ $cat->id }}" >{{ $cat->name }}</option>
                             @endforeach
@@ -42,20 +42,20 @@
                     </div>
 
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">Name</label>
+                        <label for="input1" class="form-label">Tên món ăn</label>
                         <input type="text" name="name" class="form-control" id="input1"  >
                     </div>
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">unit_price</label>
+                        <label for="input1" class="form-label">Giá</label>
                         <input type="number" name="unit_price" class="form-control" id="input1"  >
                     </div>
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">promotion_price</label>
+                        <label for="input1" class="form-label">Giá sau giảm</label>
                         <input type="number" name="promotion_price" class="form-control" id="input1"  >
                     </div>
 
                     <div class="col-md-12">
-                        <label for="input11" class="form-label">Short Description</label>
+                        <label for="input11" class="form-label">Mô tả</label>
                         <textarea name="description" class="form-control" id="input11"   rows="3"></textarea>
                     </div>
 
@@ -64,7 +64,7 @@
                 
 
                     <div class="col-md-6">
-                        <label for="input1" class="form-label">Post Title</label>
+                        <label for="input1" class="form-label">ảnh món ăn</label>
                         <input class="form-control" name="post_image" type="file" id="image">
                     </div>
 

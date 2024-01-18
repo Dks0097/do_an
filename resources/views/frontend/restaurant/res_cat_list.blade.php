@@ -48,7 +48,7 @@
                         </h3>
                         <p>{{ $item->short_descp }}</p>
                         <a href="{{ url('res/details/'.$item->id) }}" class="read-btn">
-                            Read More
+                           Xem thêm
                         </a>
                     </div>
                 </div>

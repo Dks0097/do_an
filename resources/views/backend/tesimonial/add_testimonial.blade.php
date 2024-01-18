@@ -117,16 +117,16 @@
                         },
                         messages :{
                             name: {
-                                required : 'Please Enter Team Name',
+                                required : 'Vui lòng nhập tên ',
                             }, 
                             postion: {
-                                required : 'Please Enter Team Postion',
+                                required : 'Vui lòng nhập vị trí ',
                             }, 
                             facebook: {
-                                required : 'Please Enter Facebook Url',
+                                required : 'Vui lòng nhập Url Facebook',
                             },
                             image: {
-                                required : 'Please Select Image',
+                                required : 'Vui lòng chọn hình ảnh',
                             }, 
                              
             

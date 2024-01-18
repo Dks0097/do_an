@@ -5,19 +5,19 @@ $(function(){
 
   
                   Swal.fire({
-                    title: 'Are you sure?',
-                    text: "Delete This Data?",
+                    title: 'Bạn có chắc không?',
+                    text: "Xóa dữ liệu này?",
                     icon: 'warning',
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
+                    confirmButtonText: 'Có, xóa nó đi!'
                   }).then((result) => {
                     if (result.isConfirmed) {
                       window.location.href = link
                       Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
+                        'Đã xóa!',
+                        'Tập tin của bạn đã bị xóa.',
                         'success'
                       )
                     }

@@ -46,7 +46,7 @@
                         <span>Giá {{ $lpost->unit_price  }}</span>
                         <p>{{ $lpost->short_descp }}</p>
                         <a href="{{ url('res/details/'.$lpost->id) }}" class="read-btn">
-                            Read More
+                            Xem thêm
                         </a>
                     </div>
                 </div>
