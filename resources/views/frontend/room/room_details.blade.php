@@ -196,10 +196,10 @@
 <div class="side-bar-list">
     <ul>
        <li>
-            <a href="#"> <b>Capacity : </b> {{ $roomdetails->room_capacity }} Person <i class='bx bxs-cloud-download'></i></a>
+            <a href="#"> <b>Sức chứa : </b> {{ $roomdetails->room_capacity }} người <i class='bx bxs-cloud-download'></i></a>
         </li>
         <li>
-             <a href="#"> <b>Size : </b> {{ $roomdetails->size }}ft2 <i class='bx bxs-cloud-download'></i></a>
+             <a href="#"> <b>kích thước : </b> {{ $roomdetails->size }}ft2 <i class='bx bxs-cloud-download'></i></a>
         </li>
        
        
@@ -223,7 +223,7 @@
             <a href="#"> <b>View : </b> {{ $roomdetails->view }} <i class='bx bxs-cloud-download'></i></a>
         </li>
         <li>
-             <a href="#"> <b>Bad Style : </b> {{ $roomdetails->bed_style }} <i class='bx bxs-cloud-download'></i></a>
+             <a href="#"> <b>Kiểu giường : </b> {{ $roomdetails->bed_style }} <i class='bx bxs-cloud-download'></i></a>
         </li>
          
     </ul>
@@ -240,7 +240,7 @@
                     <div class="room-details-review">
                         <h2>Đánh giá của khách hàng và Retting's</h2>
                         <div class="review-ratting">
-                            <h3>Sự reting của bạn: </h3>
+                            <h3>Đánh giá của bạn: </h3>
                             <i class='bx bx-star'></i>
                             <i class='bx bx-star'></i>
                             <i class='bx bx-star'></i>
@@ -251,7 +251,7 @@
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control"  cols="30" rows="8" required data-error="Write your message" placeholder="Write your review here.... "></textarea>
+                                        <textarea name="message" class="form-control"  cols="30" rows="8" required data-error="Write your message" placeholder="Viết nhận xét của bạn ở đây.... "></textarea>
                                     </div>
                                 </div>
 
@@ -296,7 +296,7 @@
                                  <h3>
              <a href="{{ url('room/details/'.$item->id) }}">{{ $item['type']['name'] }}</a>
                                 </h3>
-                                <span>{{ $item->price }} / Per Night </span>
+                                <span>{{ $item->price }} / Đêm </span>
                                 <div class="rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -306,7 +306,7 @@
                                 </div>
                                 <p>{{ $item->short_desc }}</p>
                                 <ul>
-                   <li><i class='bx bx-user'></i> {{ $item->room_capacity }} Person</li>
+                   <li><i class='bx bx-user'></i> {{ $item->room_capacity }} Người</li>
                    <li><i class='bx bx-expand'></i> {{ $item->size }}ft2</li>
                                 </ul>
 
@@ -391,7 +391,8 @@
           success: function(data){
           
             
-             $(".available_room").html('Availability : <span class="text-success">'+data['available_room']+' Rooms</span>');
+            $(".available_room").html('Còn trống : <span class="text-success">'+data['available_room']+' phòng</span>');
+
              $("#available_room").val(data['available_room']);
              price_calculate(data['total_nights']);
           }

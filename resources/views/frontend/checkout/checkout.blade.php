@@ -203,7 +203,7 @@
          
                           
                         </div>
-       <button type="submit" class="order-btn" id="myButton" >Place to Order</button>
+       <button type="submit" class="order-btn" id="myButton" >Đặt phòng</button>
                         
                     </div>
                 </div>
@@ -243,7 +243,7 @@ $(function() {
 
           var pay_method = $('input[name="payment_method"]:checked').val();
           if (pay_method == undefined){
-                alert('Please select a payment method');
+                alert('Vui lòng chọn một phương thức thanh toán');
                 return false;
           }else if(pay_method == 'COD'){
 
@@ -300,7 +300,7 @@ $(function() {
           } else {
 
                 document.getElementById('myButton').disabled = true;
-                document.getElementById('myButton').value = 'Please Wait...';
+                document.getElementById('myButton').value = 'Vui lòng chờ...';
 
                 // token contains id, last4, and card type
                 var token = response['id'];

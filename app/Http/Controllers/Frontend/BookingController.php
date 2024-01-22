@@ -112,12 +112,12 @@ class BookingController extends Controller
            $code = rand(000000000,999999999);
 
            if ($request->payment_method == 'Stripe') {
-            Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+            Stripe\Stripe::setApiKey(config('stripe.sk'));
             $s_pay = Stripe\Charge::create([
                 "amount" => $total_price * 100,
                 "currency" => "usd",
                 "source" => $request->stripeToken,
-                "description" => "Payment For Booking. Booking No ".$code,
+                "description" => "Thanh toán cho đặt phòng. Số đặt chỗ".$code,
 
             ]);
 
@@ -127,7 +127,7 @@ class BookingController extends Controller
             }else{
 
                 $notification = array(
-                    'message' => 'Sorry Payment Field',
+                    'message' => 'Xin lỗi thanh toán lỗi',
                     'alert-type' => 'error'
                 ); 
                 return redirect('/')->with($notification);  
@@ -156,7 +156,7 @@ class BookingController extends Controller
            $data->total_price = $total_price;
            $data->payment_method = $request->payment_method;
            $data->transation_id = '';
-           $data->payment_status = 0;
+           $data->payment_status = $payment_status;
 
            $data->name = $request->name;
            $data->email = $request->email;
@@ -186,7 +186,7 @@ class BookingController extends Controller
     Session::forget('book_date');
 
     $notification = array(
-        'message' => 'Đã thêm đặt chỗ thành công',
+        'message' => 'Đã thêm đặt phòng thành công',
         'alert-type' => 'success'
     ); 
     Notification::send($user, new BookingComplete($request->name));
